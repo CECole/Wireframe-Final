@@ -249,3 +249,40 @@ $(document).ready(function() {
 
 
 });
+
+
+    $('.select2').select2({
+        placeholder: 'Presione CTRL+A para seleccionar o deseleccionar todas las opciones.'
+    });
+
+    $('.select2[multiple]').siblings('.select2-container').append('<span class="select-all"></span>');
+
+    $(document).on('click', '.select-all', function(e) {
+        selectAllSelect2($(this).siblings('.selection').find('.select2-search__field'));
+    });
+
+    $(document).on("keyup", ".select2-search__field", function(e) {
+        var eventObj = window.event ? event : e;
+        if (eventObj.keyCode === 65 && eventObj.ctrlKey)
+            selectAllSelect2($(this));
+    });
+
+
+    function selectAllSelect2(that) {
+
+        var selectAll = true;
+        var existUnselected = false;
+        var id = that.parents("span[class*='select2-container']").siblings('select[multiple]').attr('id');
+        var item = $("#" + id);
+
+        item.find("option").each(function(k, v) {
+            if (!$(v).prop('selected')) {
+                existUnselected = true;
+                return false;
+            }
+        });
+
+        selectAll = existUnselected ? selectAll : !selectAll;
+
+        item.find("option").prop('selected', selectAll).trigger('change');
+    }
