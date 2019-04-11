@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Simulador de Créditos | Santander</title>
+    <!--[if lt IE 10]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Gradient Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+    <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
+    <meta name="author" content="Phoenixcoded" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/santander-fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/waves.min.css" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/icofont.css">
+    <link rel="stylesheet" type="text/css" href="css/glyphicon.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
+</head>
+
+<body>
+    <div class="theme-loader">
+        <div class="loader-track">
+            <div class="preloader-wrapper">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+            <nav class="navbar header-navbar pcoded-header">
+                <div class="navbar-wrapper">
+                    <div class="navbar-logo">
+                        <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#!">
+                            <i class="ti-menu"></i>
+                        </a>
+                        <a href="index.html">
+                            <img class="img-fluid" src="img/logo.png" alt="Theme-Logo" />
+                        </a>
+                        <a class="mobile-options waves-effect waves-light">
+                            <i class="ti-more"></i>
+                        </a>
+                    </div>
+                    <div class="navbar-container container-fluid">
+                        <ul class="nav-left">
+                            <li>
+                                <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
+                            </li>
+                            <li>
+                                <a href="#!" onclick="javascript:toggleFullScreen()" class="waves-effect waves-light">
+                                    <i class="ti-fullscreen"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li class="user-profile header-notification">
+                                <a href="#!" class="waves-effect waves-light">
+                                    <!-- <img src="img/avatar-4.jpg" class="img-radius" alt="User-Profile-Image"> -->
+                                    <span>John Doe</span>
+                                    <i class="ti-angle-down"></i>
+                                </a>
+                                <ul class="show-notification profile-notification">
+                                    <li class="waves-effect waves-light">
+                                        <a href="#!">
+                                            <i class="ti-settings"></i> Configuración
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a href="user-profile.html">
+                                            <i class="ti-user"></i> Perfil
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a href="auth-normal-sign-in.html">
+                                            <i class="ti-layout-sidebar-left"></i> Salir
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="pcoded-main-container">
+                <div class="pcoded-wrapper">
+                    <nav class="pcoded-navbar">
+                        <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+                        <div class="pcoded-inner-navbar main-menu">
+                            <div class="">
+                                <div class="main-menu-header">
+                                    <!-- <img class="img-80 img-radius" src="img/avatar-4.jpg" alt="User-Profile-Image"> -->
+                                    <div class="user-details">
+                                        <span id="more-details">John Doe<i class="fa fa-caret-down"></i></span>
+                                    </div>
+                                </div>
+                                <div class="main-menu-content">
+                                    <ul>
+                                        <li class="more-details">
+                                            <a href="#"><i class="ti-user"></i>Ver Perfil</a>
+                                            <a href="#!"><i class="ti-settings"></i>Configuración</a>
+                                            <a href="auth-normal-sign-in.html"><i class="ti-layout-sidebar-left"></i>Salir</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pcoded-navigation-label">Navegación</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li  class="pcoded-hasmenu active pcoded-trigger" dropdown-icon="style3" subitem-icon="style7">
+                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                                        <span class="pcoded-mtext">Administración</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                    <ul class="pcoded-submenu">
+                                        <li class="">
+                                            <a href="tabs.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Carga de Archivos</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="gestion-variables.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Gestión de Variables</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="gestion-tooltips.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Gestión de Tooltips</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="gestion-notas-informativas.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Gestión de Notas</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="gestion-popups.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Gestión de PopUps</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="gestion-perfiles.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Gestión de Perfiles</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="gestion-plantillas.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Gestión de Plantillas</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class="active ms-hover ">
+                                            <a href="gestion-factores.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Gestión de Factores</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                    <a href="simulador.html" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-layout-cta-right"></i><b>P</b></span>
+                                        <span class="pcoded-mtext">Simulador</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="calculadora-ingresos.html" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-layout-cta-right"></i><b>N</b></span>
+                                        <span class="pcoded-mtext">Calculadora</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="reportes.html" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-view-grid"></i><b>W</b></span>
+                                        <span class="pcoded-mtext">Reportes</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="auth-normal-sign-in.html" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-layout-cta-right"></i><b>N</b></span>
+                                        <span class="pcoded-mtext">Salir</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="pcoded-content">
+                        <div class="page-header">
+                            <div class="page-block">
+                                <div class="row align-items-center">
+                                    <div class="col-md-8">
+                                        <div class="page-header-title">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul class="breadcrumb mb-1 mt-1">
+                                            <li class="breadcrumb-item">
+                                                <a href="index.html"> <i class="fa fa-home"></i> </a>
+                                            </li>
+                                            <li class="breadcrumb-item"><a href="#!">Gestión de Factores</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pcoded-inner-content">
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <div class="page-body">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5>Gestión de Factores</h5>
+                                            </div>
+                                            <div class="card-block">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label mb-3 text-left pl-5">Tipo de Cliente</label>
+                                                    <div class="col-sm-4">
+                                                        <select id="hello-single" class="form-control form-control-primary">
+                                                            <option value="c">Asalariado</option>
+                                                            <option value="h">Profesionista Independiente</option>
+                                                            <option value="e">PFAE</option>
+                                                            <option value="se">Dueño de Empresa</option>
+                                                        </select>
+                                                    </div>
+                                                    <label class="col-sm-2 col-form-label text-left pl-5">Documento</label>
+                                                    <div class="col-sm-4">
+                                                        <select id="hello-single-2" class="form-control form-control-primary">
+                                                            <option value="cheese">Recibos de Nómina </option>
+                                                            <option value="h">Declaración Anual</option>
+                                                            <option value="e">Estados de Cuenta</option>
+                                                        </select>
+                                                    </div>
+                                                    <label class="col-sm-2 col-form-label mb-3 text-left pl-5">Segmento</label>
+                                                    <div class="col-sm-4">
+                                                        <select id="hello-single" class="form-control form-control-primary">
+                                                            <option value="cheese">Clásico</option>
+                                                            <option value="c">Preferente</option>
+                                                            <option value="h">Premier</option>
+                                                            <option value="e">Select</option>
+                                                            <option value="se">Banca Privada </option>
+                                                        </select>
+                                                    </div>
+                                                    <label class="col-sm-2 col-form-label text-left pl-5">Tipo de Cuenta</label>
+                                                    <div class="col-sm-4">
+                                                        <select id="hello-single-2" class="form-control form-control-primary">
+                                                            <option value="cheese">Captación (personal)</option>
+                                                            <option value="c">Captación (negocio)</option>
+                                                            <option value="e">Inversión</option>
+                                                        </select>
+                                                    </div>
+                                                    <label class="col-sm-2 col-form-label mb-3 text-left pl-5">Actividad</label>
+                                                    <div class="col-sm-4">
+                                                        <select id="hello-single" class="form-control form-control-primary">
+                                                            <option value="cheese">Gasolineros</option>
+                                                            <option value="c">Servicios</option>
+                                                            <option value="e">Otros</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <div class="col-md-7"></div>
+                                                    <div class="col-md-1">
+                                                        <p style="margin-top: 10px; text-align: right;"><i class="glyphicon glyphicon-search"></i></p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="dt-responsive table-responsive">
+                                                            <input class="form-control form-control-primary" id="myInput" type="text" placeholder="Buscar..">
+                                                            <br>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-striped table-bordered" id="example3">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>Tipo de Cliente</th>
+                                                                        <th>Documento</th>
+                                                                        <th>Tipo de Cuenta</th>
+                                                                        <th>Tipo de Segmento</th>
+                                                                        <th>Actividad</th>
+                                                                        <th>Factor</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr id="1">
+                                                                        <td>
+                                                                        <span class="tabledit-span tabledit-identifier">1</span><input class="tabledit-input tabledit-identifier" name="id" value="1" disabled=""></td>
+                                                                        <td>PFAE</td>
+                                                                        <td>EdoCta</td>
+                                                                        <td>Inversion</td>
+                                                                        <td>Clasico</td>
+                                                                        <td class="tabledit-view-mode" style="cursor: pointer;"><span class="tabledit-span" style="display: inline;">N/A</span><input class="tabledit-input form-control input-sm" type="text" name="firstname" value="N/A" style="display: none;" disabled=""></td>
+                                                                        <td class="tabledit-view-mode" style="cursor: pointer;"><span class="tabledit-span" style="display: inline;">0.0063</span><input class="tabledit-input form-control input-sm" type="text" name="lastname" value="0.0063" style="display: none;" disabled=""></td>
+                                                                    </tr>
+                                                                    <tr id="2">
+                                                                        <td style="display: none;"><span class="tabledit-span tabledit-identifier">2</span><input class="tabledit-input tabledit-identifier" type="hidden" name="id" value="2" disabled=""></td>
+                                                                        <td>Asalariado</td>
+                                                                        <td>Recibo de Nomina</td>
+                                                                        <td>N/A</td>
+                                                                        <td>N/A</td>
+                                                                        <td class="tabledit-view-mode" style="cursor: pointer;"><span class="tabledit-span">N/A</span><input class="tabledit-input form-control input-sm" type="text" name="firstname" value="N/A" style="display: none;" disabled=""></td>
+                                                                        <td class="tabledit-view-mode" style="cursor: pointer;"><span class="tabledit-span">1</span><input class="tabledit-input form-control input-sm" type="text" name="lastname" value="1" style="display: none;" disabled=""></td>
+                                                                    </tr>
+                                                                    <tr id="3">
+                                                                        <td style="display: none;"><span class="tabledit-span tabledit-identifier">3</span><input class="tabledit-input tabledit-identifier" type="hidden" name="id" value="3" disabled=""></td>
+                                                                        <td>Dueño de Empresa</td>
+                                                                        <td>Declaracion Anual</td>
+                                                                        <td>N/A</td>
+                                                                        <td>N/A</td>
+                                                                        <td class="tabledit-view-mode" style="cursor: pointer;"><span class="tabledit-span">Servicios</span><input class="tabledit-input form-control input-sm" type="text" name="firstname" value="Servicios" style="display: none;" disabled=""></td>
+                                                                        <td class="tabledit-view-mode" style="cursor: pointer;"><span class="tabledit-span">0.4</span><input class="tabledit-input form-control input-sm" type="text" name="lastname" value="0.4" style="display: none;" disabled=""></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                                
+                                                            <table class="table table-striped table-bordered d-none" id="example-2">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>Tipo de Cliente</th>
+                                                                        <th>Documento</th>
+                                                                        <th>Tipo de Cuenta</th>
+                                                                        <th>Tipo de Segmento</th>
+                                                                        <th>Actividad</th>
+                                                                        <th>Factor</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                        <td class="tabledit-view-mode"><span class="tabledit-span">PFAE</span>
+                                                                            <input class="tabledit-input form-control input-sm" type="text" name="First" value="Mark">
+                                                                        </td>
+                                                                        <td class="tabledit-view-mode"><span class="tabledit-span">EdoCta</span>
+                                                                            <input class="tabledit-input form-control input-sm" type="text" name="Last" value="Otto">
+                                                                        </td>
+                                                                        <td class="tabledit-view-mode"><span class="tabledit-span">Inversion</span>
+                                                                            <select class="tabledit-input form-control input-sm" name="Nickname" disabled="" style="display:none;">
+                                                                                <option value="1">@mdo</option>
+                                                                                <option value="2">@fat</option>
+                                                                                <option value="3">@twitter</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="tabledit-view-mode"><span class="tabledit-span">Clásico</span>
+                                                                            <select class="tabledit-input form-control input-sm" name="Nickname" disabled="" style="display:none;">
+                                                                                <option value="1">@mdo</option>
+                                                                                <option value="2">@fat</option>
+                                                                                <option value="3">@twitter</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td class="tabledit-view-mode"><span class="tabledit-span">Jacob</span>
+                                                                            <input class="tabledit-input form-control input-sm" type="text" name="First" value="Jacob" disabled="">
+                                                                        </td>
+                                                                        <td class="tabledit-view-mode"><span class="tabledit-span">Thorntonkk</span>
+                                                                            <input class="tabledit-input form-control input-sm" type="text" name="Last" value="Thornton" disabled="">
+                                                                        </td>
+                                                                        <td class="tabledit-view-mode"><span class="tabledit-span">@mdo</span>
+                                                                            <select class="tabledit-input form-control input-sm" name="Nickname" disabled="" style="display:none;">
+                                                                                <option value="1">@mdo</option>
+                                                                                <option value="2">@fat</option>
+                                                                                <option value="3">@twitter</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="tabledit-view-mode"><span class="tabledit-span">@mdo</span>
+                                                                            <select class="tabledit-input form-control input-sm" name="Nickname" disabled="" style="display:none;">
+                                                                                <option value="1">@mdo</option>
+                                                                                <option value="2">@fat</option>
+                                                                                <option value="3">@twitter</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td class="tabledit-view-mode"><span class="tabledit-span">Larry</span>
+                                                                            <input class="tabledit-input form-control input-sm" type="text" name="First" value="Larry" disabled="">
+                                                                        </td>
+                                                                        <td class="tabledit-view-mode"><span class="tabledit-span">the Bird</span>
+                                                                            <input class="tabledit-input form-control input-sm" type="text" name="Last" value="the Bird" disabled="">
+                                                                        </td>
+                                                                        <td class="tabledit-view-mode"><span class="tabledit-span">@mdo</span>
+                                                                            <select class="tabledit-input form-control input-sm" name="Nickname" disabled="" style="display:none;">
+                                                                                <option value="1">@mdo</option>
+                                                                                <option value="2">@fat</option>
+                                                                                <option value="3">@twitter</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td class="tabledit-view-mode"><span class="tabledit-span">@mdo</span>
+                                                                            <select class="tabledit-input form-control input-sm" name="Nickname" disabled="" style="display:none;">
+                                                                                <option value="1">@mdo</option>
+                                                                                <option value="2">@fat</option>
+                                                                                <option value="3">@twitter</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group row">
+                                                            <div class="col-sm-7"></div>
+                                                            <label class="col-sm-1 col-form-label text-right">Factor</label>
+                                                                <div class="col-sm-4">
+                                                                    <input type="text" class="form-control form-control-primary">
+                                                                </div>
+
+                                                        </div>
+                                                        
+                                                    </div>
+                                                            <div class="col-sm-10 col-md-10">
+                                                            </div>
+                                                            <div class="col-sm-2 col-md-2 mt-2">
+                                                                <button class="btn btn-primary btn-block waves-effect waves-light __web-inspector-hide-shortcut__ " style="float: right;">Guardar</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card d-none">
+                                            <div class="card-header">
+                                                <h5>Edit With Click</h5>
+                                                <span>Click on row to perform edit action then Enter for save</span>
+                                            </div>
+                                            <div class="card-block">
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped table-bordered" id="example-1">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>First</th>
+                                                                <th>Last</th>
+                                                                <th>Nickname</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">1</th>
+                                                                <td class="tabledit-view-mode"><span class="tabledit-span">Mark</span>
+                                                                    <input class="tabledit-input form-control input-sm" type="text" name="First" value="Mark">
+                                                                </td>
+                                                                <td class="tabledit-view-mode"><span class="tabledit-span">Otto</span>
+                                                                    <input class="tabledit-input form-control input-sm" type="text" name="Last" value="Otto">
+                                                                </td>
+                                                                <td class="tabledit-view-mode"><span class="tabledit-span">@mdo</span>
+                                                                    <select class="tabledit-input form-control input-sm" name="Nickname" disabled="">
+                                                                        <option value="1">@mdo</option>
+                                                                        <option value="2">@fat</option>
+                                                                        <option value="3">@twitter</option>
+                                                                    </select>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">2</th>
+                                                                <td class="tabledit-view-mode"><span class="tabledit-span">Jacob</span>
+                                                                    <input class="tabledit-input form-control input-sm" type="text" name="First" value="Jacob" disabled="">
+                                                                </td>
+                                                                <td class="tabledit-view-mode"><span class="tabledit-span">Thorntonkk</span>
+                                                                    <input class="tabledit-input form-control input-sm" type="text" name="Last" value="Thornton" disabled="">
+                                                                </td>
+                                                                <td class="tabledit-view-mode"><span class="tabledit-span">@mdo</span>
+                                                                    <select class="tabledit-input form-control input-sm" name="Nickname" disabled="">
+                                                                        <option value="1">@mdo</option>
+                                                                        <option value="2">@fat</option>
+                                                                        <option value="3">@twitter</option>
+                                                                    </select>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">3</th>
+                                                                <td class="tabledit-view-mode"><span class="tabledit-span">Larry</span>
+                                                                    <input class="tabledit-input form-control input-sm" type="text" name="First" value="Larry" disabled="">
+                                                                </td>
+                                                                <td class="tabledit-view-mode"><span class="tabledit-span">the Bird</span>
+                                                                    <input class="tabledit-input form-control input-sm" type="text" name="Last" value="the Bird" disabled="">
+                                                                </td>
+                                                                <td class="tabledit-view-mode"><span class="tabledit-span">@mdo</span>
+                                                                    <select class="tabledit-input form-control input-sm" name="Nickname" disabled="">
+                                                                        <option value="1">@mdo</option>
+                                                                        <option value="2">@fat</option>
+                                                                        <option value="3">@twitter</option>
+                                                                    </select>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <button type="button" class="btn btn-primary waves-effect waves-light add" onclick="add_row();">Add Row</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--[if lt IE 10]>
+    <div class="ie-warning">
+        <h1>Warning!!</h1>
+        <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+        <div class="iew-container">
+            <ul class="iew-download">
+                <li>
+                    <a href="http://www.google.com/chrome/">
+                        <img src="../files/assets/images/browser/chrome.png" alt="Chrome">
+                        <div>Chrome</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mozilla.org/en-US/firefox/new/">
+                        <img src="../files/assets/images/browser/firefox.png" alt="Firefox">
+                        <div>Firefox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.opera.com">
+                        <img src="../files/assets/images/browser/opera.png" alt="Opera">
+                        <div>Opera</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.apple.com/safari/">
+                        <img src="../files/assets/images/browser/safari.png" alt="Safari">
+                        <div>Safari</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <img src="../files/assets/images/browser/ie.png" alt="">
+                        <div>IE (9 & above)</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Sorry for the inconvenience!</p>
+    </div>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/waves.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/css-scrollbars.js"></script>
+    <script type="text/javascript" src="js/jquery.tabledit.js"></script>
+    <script type="text/javascript" src="js/editable.js"></script>
+    <script src="js/pcoded.min.js"></script>
+    <script src="js/vertical-layout.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

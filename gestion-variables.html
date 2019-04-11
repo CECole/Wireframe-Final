@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Simulador de Créditos | Santander</title>
+    <!--[if lt IE 10]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Gradient Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+    <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
+    <meta name="author" content="Phoenixcoded" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/santander-fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/waves.min.css" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/glyphicon.css">
+    <link rel="stylesheet" type="text/css" href="css/icofont.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.dataTables.css">
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-multiselect.css" />
+    <link rel="stylesheet" type="text/css" href="css/multi-select.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
+</head>
+
+<body>
+    <div class="theme-loader">
+        <div class="loader-track">
+            <div class="preloader-wrapper">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+            <nav class="navbar header-navbar pcoded-header">
+                <div class="navbar-wrapper">
+                    <div class="navbar-logo">
+                        <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#!">
+                            <i class="ti-menu"></i>
+                        </a>
+                        <a href="index.html">
+                            <img class="img-fluid" src="img/logo.png" alt="Theme-Logo" />
+                        </a>
+                        <a class="mobile-options waves-effect waves-light">
+                            <i class="ti-more"></i>
+                        </a>
+                    </div>
+                    <div class="navbar-container container-fluid">
+                        <ul class="nav-left">
+                            <li>
+                                <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
+                            </li>
+                            <li>
+                                <a href="#!" onclick="javascript:toggleFullScreen()" class="waves-effect waves-light">
+                                    <i class="ti-fullscreen"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li class="user-profile header-notification">
+                                <a href="#!" class="waves-effect waves-light">
+                                    <!-- <img src="img/avatar-4.jpg" class="img-radius" alt="User-Profile-Image"> -->
+                                    <span>John Doe</span>
+                                    <i class="ti-angle-down"></i>
+                                </a>
+                                <ul class="show-notification profile-notification">
+                                    <li class="waves-effect waves-light">
+                                        <a href="#!">
+                                            <i class="ti-settings"></i> Configuración
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a href="user-profile.html">
+                                            <i class="ti-user"></i> Perfil
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a href="auth-normal-sign-in.html">
+                                            <i class="ti-layout-sidebar-left"></i> Salir
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="pcoded-main-container">
+                <div class="pcoded-wrapper">
+                    <nav class="pcoded-navbar">
+                        <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+                        <div class="pcoded-inner-navbar main-menu">
+                            <div class="">
+                                <div class="main-menu-header">
+                                    <!-- <img class="img-80 img-radius" src="img/avatar-4.jpg" alt="User-Profile-Image"> -->
+                                    <div class="user-details">
+                                        <span id="more-details">John Doe<i class="fa fa-caret-down"></i></span>
+                                    </div>
+                                </div>
+                                <div class="main-menu-content">
+                                    <ul>
+                                        <li class="more-details">
+                                            <a href="#"><i class="ti-user"></i>Ver Perfil</a>
+                                            <a href="#!"><i class="ti-settings"></i>Configuración</a>
+                                            <a href="auth-normal-sign-in.html"><i class="ti-layout-sidebar-left"></i>Salir</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pcoded-navigation-label">Navegación</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="pcoded-hasmenu active pcoded-trigger">
+                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                                        <span class="pcoded-mtext">Administración</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                    <ul class="pcoded-submenu" style="display: block;">
+                                        <li class="">
+                                            <a href="tabs.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Carga de Archivos</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class="active ms-hover ">
+                                            <a href="gestion-variables.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Gestión de Variables</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="gestion-tooltips.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Gestión de Tooltips</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="gestion-notas-informativas.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Gestión de Notas</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="gestion-popups.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Gestión de PopUps</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="gestion-perfiles.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Gestión de Perfiles</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="gestion-plantillas.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Gestión de Plantillas</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="gestion-factores.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Gestión de Factores</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                    <a href="simulador.html" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-layout-cta-right"></i><b>P</b></span>
+                                        <span class="pcoded-mtext">Simulador</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="calculadora-ingresos.html" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-layout-cta-right"></i><b>N</b></span>
+                                        <span class="pcoded-mtext">Calculadora</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="reportes.html" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-view-grid"></i><b>W</b></span>
+                                        <span class="pcoded-mtext">Reportes</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="auth-normal-sign-in.html" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-layout-cta-right"></i><b>N</b></span>
+                                        <span class="pcoded-mtext">Salir</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="pcoded-content">
+                        <div class="page-header">
+                            <div class="page-block">
+                                <div class="row align-items-center">
+                                    <div class="col-md-8">
+                                        <div class="page-header-title">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul class="mb-1 mt-1 breadcrumb">
+                                            <li class="breadcrumb-item">
+                                                <a href="index.html"> <i class="fa fa-home"></i> </a>
+                                            </li>
+                                            <li class="breadcrumb-item"><a href="#!">Gestión de Variables</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pcoded-inner-content">
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <div class="page-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h5>Gestión de Variables</h5>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <form>
+                                                            <div class="form-group row">
+                                                                <label class="col-sm-2 col-form-label text-left">Tipo de Producto</label>
+                                                                <div class="col-sm-4">
+                                                                    <select id="hello-single" class="form-control">
+                                                                        <option value=" opt8">Seleccione una Opción</option>
+                                                                        <option value=" opt8">Efectivo Adquisición</option>
+                                                                        <option value="opt9">Efectivo Restitución</option>
+                                                                        <option value="opt10">Efectivo Sustitución</option>
+                                                                        <option value="opt11">Nómina Adquisición</option>
+                                                                        <option value=" opt8">Nómina Restitución</option>
+                                                                        <option value="opt9">Nómina Sustitución</option>
+                                                                        <option value="opt10">Adquisición Línea Express</option>
+                                                                        <option value="opt11">Restitución Línea Express</option>
+                                                                    </select>
+                                                                </div>
+                                                                <label class="col-sm-2 col-form-label text-left">Apartado</label>
+                                                                <div class="col-sm-4">
+                                                                    <select id="hello-single" class="form-control">
+                                                                        <option value="opt4">Seleccione una Opción</option>
+                                                                        <option value="opt1">Oferta Promocional</option>
+                                                                        <option value="opt2">Oferta Actual</option>
+                                                                        <option value="opt3">Conversión Auto</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row mt-2">
+                                                                <label class="col-sm-2 col-form-label text-left">Subproducto</label>
+                                                                <div class="col-sm-10">
+                                                                    <select class="js-example-basic-multiple col-sm-12" multiple="multiple">
+                                                                        <option value="cheese">12-219</option>
+                                                                        <option value="h">13-220</option>
+                                                                        <option value="e">13-221</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <div class="row mt-3">
+                                                            <div class="col-sm-5">
+                                                                <div class='custom-header'>
+                                                                    <h4 class="sub-title">Elementos Visibles</h4>
+                                                                </div>
+                                                                <select name="from[]" id="multiselect" class="form-control mb-4" size="8" multiple="multiple">
+                                                                    <option value='elem_1'>Tasa de Interés Ordinaria Anual</option>
+                                                                    <option value='elem_2'>Tasa Mensual</option>
+                                                                    <option value='elem_3'>Plazo</option>
+                                                                    <option value='elem_4'>Número de Pagos</option>
+                                                                    <option value='elem_5'>Periodicidad</option>
+                                                                    <option value='elem_6'>Comisión por Apertura IVA Incluido</option>
+                                                                    <option value='elem_7'>Costo de los Seguros Santander</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-sm-1 mt-4">
+                                                                <div class="form-group" style="display: grid; margin-top: 8px;">
+                                                                    <button type="button" id="multiselect_rightAll" class="btn btn-sm mb-2"><i class="glyphicon glyphicon-forward"></i></button>
+                                                                    <button type="button" id="multiselect_rightSelected" class="btn btn-sm mb-2"><i class="glyphicon glyphicon-chevron-right"></i></button>
+                                                                    <button type="button" id="multiselect_leftSelected" class="btn btn-sm mb-2"><i class="glyphicon glyphicon-chevron-left"></i></button>
+                                                                    <button type="button" id="multiselect_leftAll" class="btn btn-sm mb-2"><i class="glyphicon glyphicon-backward"></i></button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class='custom-header'>
+                                                                    <h4 class="sub-title">Elementos Ocultos</h4>
+                                                                </div>
+                                                                <select name="to[]" id="multiselect_to" class="form-control" size="8" multiple="multiple">
+                                                                    <option value='elem_8'>Importe Neto del Crédito</option>
+                                                                    <option value='elem_9'>Comisió por Disposición IVA Incluido</option>
+                                                                    <option value='elem_10'>Botón Mandatorio</option>
+                                                                    <option value='elem_11'>CAT</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block table-border-style">
+                                                        <h4 class="sub-title">Subproductos Común</h4>
+                                                        <div class="table-responsive">
+                                                            <table class="table table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>A</th>
+                                                                        <th>B</th>
+                                                                        <th>C</th>
+                                                                        <th>D</th>
+                                                                        <th>E</th>
+                                                                        <th>F</th>
+                                                                        <th>G</th>
+                                                                        <th>H</th>
+                                                                        <th>I</th>
+                                                                        <th>J</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox1" type="checkbox" checked="">
+                                                                                <label for="checkbox1">
+                                                                                    Subproducto 1
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox2" type="checkbox" checked="">
+                                                                                <label for="checkbox2">
+                                                                                    Subproducto 2
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox3" type="checkbox" checked="">
+                                                                                <label for="checkbox3">
+                                                                                    Subproducto 3
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox4" type="checkbox" checked="">
+                                                                                <label for="checkbox4">
+                                                                                    Subproducto 4
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox5" type="checkbox" checked="">
+                                                                                <label for="checkbox5">
+                                                                                    Subproducto 5
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox6" type="checkbox" checked="">
+                                                                                <label for="checkbox6">
+                                                                                    Subproducto 6
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox7" type="checkbox" checked="">
+                                                                                <label for="checkbox7">
+                                                                                    Subproducto 7
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox8" type="checkbox" checked="">
+                                                                                <label for="checkbox8">
+                                                                                    Subproducto 8
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox9" type="checkbox" checked="">
+                                                                                <label for="checkbox9">
+                                                                                    Subproducto 9
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox10" type="checkbox" checked="">
+                                                                                <label for="checkbox10">
+                                                                                    Subproducto 10
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox11" type="checkbox" checked="">
+                                                                                <label for="checkbox11">
+                                                                                    Subproducto 11
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox12" type="checkbox" checked="">
+                                                                                <label for="checkbox12">
+                                                                                    Subproducto 12
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox13" type="checkbox" checked="">
+                                                                                <label for="checkbox13">
+                                                                                    Subproducto 13
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox14" type="checkbox" checked="">
+                                                                                <label for="checkbox14">
+                                                                                    Subproducto 14
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox15" type="checkbox" checked="">
+                                                                                <label for="checkbox15">
+                                                                                    Subproducto 15
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox16" type="checkbox" checked="">
+                                                                                <label for="checkbox16">
+                                                                                    Subproducto 16
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox17" type="checkbox" checked="">
+                                                                                <label for="checkbox17">
+                                                                                    Subproducto 17
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox18" type="checkbox" checked="">
+                                                                                <label for="checkbox18">
+                                                                                    Subproducto 18
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox19" type="checkbox" checked="">
+                                                                                <label for="checkbox19">
+                                                                                    Subproducto 19
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox20" type="checkbox" checked="">
+                                                                                <label for="checkbox20">
+                                                                                    Subproducto 20
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox21" type="checkbox" checked="">
+                                                                                <label for="checkbox21">
+                                                                                    Subproducto 21
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox22" type="checkbox" checked="">
+                                                                                <label for="checkbox22">
+                                                                                    Subproducto 22
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox23" type="checkbox" checked="">
+                                                                                <label for="checkbox23">
+                                                                                    Subproducto 23
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox24" type="checkbox" checked="">
+                                                                                <label for="checkbox24">
+                                                                                    Subproducto 24
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox25" type="checkbox" checked="">
+                                                                                <label for="checkbox25">
+                                                                                    Subproducto 25
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox26" type="checkbox" checked="">
+                                                                                <label for="checkbox26">
+                                                                                    Subproducto 26
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox27" type="checkbox" checked="">
+                                                                                <label for="checkbox27">
+                                                                                    Subproducto 27
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox28" type="checkbox" checked="">
+                                                                                <label for="checkbox28">
+                                                                                    Subproducto 28
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox29" type="checkbox" checked="">
+                                                                                <label for="checkbox29">
+                                                                                    Subproducto 29
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox30" type="checkbox" checked="">
+                                                                                <label for="checkbox30">
+                                                                                    Subproducto 30
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">4</th>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox31" type="checkbox" checked="">
+                                                                                <label for="checkbox31">
+                                                                                    Subproducto 31
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox32" type="checkbox" checked="">
+                                                                                <label for="checkbox32">
+                                                                                    Subproducto 32
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox33" type="checkbox" checked="">
+                                                                                <label for="checkbox33">
+                                                                                    Subproducto 33
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox34" type="checkbox" checked="">
+                                                                                <label for="checkbox34">
+                                                                                    Subproducto 34
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox35" type="checkbox" checked="">
+                                                                                <label for="checkbox35">
+                                                                                    Subproducto 35
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox36" type="checkbox" checked="">
+                                                                                <label for="checkbox36">
+                                                                                    Subproducto 36
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox37" type="checkbox" checked="">
+                                                                                <label for="checkbox37">
+                                                                                    Subproducto 37
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox38" type="checkbox" checked="">
+                                                                                <label for="checkbox38">
+                                                                                    Subproducto 38
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox39" type="checkbox" checked="">
+                                                                                <label for="checkbox39">
+                                                                                    Subproducto 39
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox40" type="checkbox" checked="">
+                                                                                <label for="checkbox40">
+                                                                                    Subproducto 40
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">5</th>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox41" type="checkbox" checked="">
+                                                                                <label for="checkbox41">
+                                                                                    Subproducto 41
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox42" type="checkbox" checked="">
+                                                                                <label for="checkbox42">
+                                                                                    Subproducto 42
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox43" type="checkbox" checked="">
+                                                                                <label for="checkbox43">
+                                                                                    Subproducto 43
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox44" type="checkbox" checked="">
+                                                                                <label for="checkbox44">
+                                                                                    Subproducto 44
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox45" type="checkbox" checked="">
+                                                                                <label for="checkbox45">
+                                                                                    Subproducto 45
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox46" type="checkbox" checked="">
+                                                                                <label for="checkbox46">
+                                                                                    Subproducto 46
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox47" type="checkbox" checked="">
+                                                                                <label for="checkbox47">
+                                                                                    Subproducto 47
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox48" type="checkbox" checked="">
+                                                                                <label for="checkbox48">
+                                                                                    Subproducto 48
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox49" type="checkbox" checked="">
+                                                                                <label for="checkbox49">
+                                                                                    Subproducto 49
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="checkbox-color checkbox-primary">
+                                                                                <input id="checkbox50" type="checkbox" checked="">
+                                                                                <label for="checkbox50">
+                                                                                    Subproducto 50
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12">
+                                                            <button class="btn btn-primary waves-effect waves-light __web-inspector-hide-shortcut__ " style="float: right;">Guardar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--[if lt IE 10]>
+<div class="ie-warning">
+    <h1>Warning!!</h1>
+    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers
+        to access this website.</p>
+    <div class="iew-container">
+        <ul class="iew-download">
+            <li>
+                <a href="http://www.google.com/chrome/">
+                    <img src="../files/assets/images/browser/chrome.png" alt="Chrome">
+                    <div>Chrome</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mozilla.org/en-US/firefox/new/">
+                    <img src="../files/assets/images/browser/firefox.png" alt="Firefox">
+                    <div>Firefox</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.opera.com">
+                    <img src="../files/assets/images/browser/opera.png" alt="Opera">
+                    <div>Opera</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.apple.com/safari/">
+                    <img src="../files/assets/images/browser/safari.png" alt="Safari">
+                    <div>Safari</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                    <img src="../files/assets/images/browser/ie.png" alt="">
+                    <div>IE (9 & above)</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p>Sorry for the inconvenience!</p>
+</div>
+<![endif]-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/waves.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/css-scrollbars.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.buttons.min.js"></script>
+    <script src="js/jszip.min.js"></script>
+    <script src="js/pdfmake.min.js"></script>
+    <script src="js/vfs_fonts.js"></script>
+    <script src="js/dataTables.responsive.min.js"></script>
+    <script src="js/buttons.print.min.js"></script>
+    <script src="js/buttons.html5.min.js"></script>
+    <script src="js/dataTables.bootstrap4.min.js"></script>
+    <script src="js/dataTables.responsive.min.js"></script>
+    <script src="js/responsive.bootstrap4.min.js"></script>
+    <script src="js/responsive-custom.js"></script>
+    <script type="text/javascript" src="js/bootstrap-multiselect.js">
+    </script>
+    <script type="text/javascript" src="js/css-scrollbars.js"></script>
+    <script type="text/javascript" src="js/select2.full.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-multiselect.js">
+    </script>
+    <script type="text/javascript" src="js/jquery.multi-select.js"></script>
+    <script type="text/javascript" src="js/jquery.quicksearch.js"></script>
+    <script type="text/javascript" src="js/select2-custom.js"></script>
+    <script type="text/javascript" src="js/sweetalert.min.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script src="js/classie.js"></script>
+    <script type="text/javascript" src="js/modalEffects.js"></script>
+    <!-- 
+    <script type="text/javascript" src="js/select2.full.min.js"></script>
+    <script type="text/javascript" src="js/jquery.multi-select.js"></script>
+    <script type="text/javascript" src="js/jquery.quicksearch.js"></script>
+    <script type="text/javascript" src="js/select2-custom.js"></script> -->
+    <script type="text/javascript" src="js/multiselect.js"></script>
+    <script src="js/pcoded.min.js"></script>
+    <script src="js/vertical-layout.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#order-table tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+        // make code pretty
+        window.prettyPrint && prettyPrint();
+
+        // hack for iPhone 7.0.3 multiselects bug
+        if (navigator.userAgent.match(/iPhone/i)) {
+            $('select[multiple]').each(function() {
+                var select = $(this).on({
+                    "focusout": function() {
+                        var values = select.val() || [];
+                        setTimeout(function() {
+                            select.val(values.length ? values : ['']).change();
+                        }, 1000);
+                    }
+                });
+                var firstOption = '<option value="" disabled="disabled"';
+                firstOption += (select.val() || []).length > 0 ? '' : ' selected="selected"';
+                firstOption += '>Select ' + (select.attr('title') || 'Options') + '';
+                firstOption += '</option>';
+                select.prepend(firstOption);
+            });
+        }
+
+        $('#multiselect').multiselect();
+    });
+    $("button.cancel-btn").click(function() {
+        swal("Desea Cancelar?", "Se perderán los datos no guardados.", "warning")
+    });
+    $("button.success-btn").click(function() {
+        swal("Se ha guardado la edición", "El perfil se ha actualizado.", "success")
+    });
+
+    $("button.delete-account").click(function() {
+        swal({
+                title: "Está Seguro?",
+                text: "Una vez borrado, no podrá recuperar los datos!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+                if (willDelete) {
+                    swal("Su Archivo ha sido borrado!", {
+                        icon: "success",
+                    });
+                } else {
+                    swal("Your imaginary file is safe!");
+                }
+            });
+    });
+    $(".js-select2").select2({
+        closeOnSelect: false,
+        // placeholder: "Placeholder",
+        allowHtml: true,
+        allowClear: true,
+        tags: true // создает новые опции на лету
+    });
+    </script>
+</body>
+
+</html>
