@@ -6702,7 +6702,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .bg-danger {
-    background-color: #ff5252 !important;
+    background-color: #CC0000 !important;
     color: #fff
 }
 

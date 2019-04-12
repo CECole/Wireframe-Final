@@ -290,11 +290,6 @@
                                                         <!-- <span>Add class of <code>.form-control</code> with <code>&lt;input&gt;</code> tag</span> -->
                                                     </div>
                                                     <div class="card-block">
-                                                        <h4 class="sub-title" style=" padding-bottom: 52px;">
-                                                            <div class="col-sm-2" style="float: right; padding-right: 1px; padding-left: 23px;">
-                                                                <a href="simulador-clientes-menu.html" class="btn btn-primary btn-block waves-effect waves-light" style="float: right;">Terminar</a>
-                                                            </div>
-                                                        </h4>
                                                         <div class="form-group row">
                                                             <label class="col-sm-1 col-form-label text-right">Cliente</label>
                                                             <div class="col-sm-3">
@@ -313,6 +308,15 @@
                                                             <div class="col-sm-2">
                                                                 <input type="text" class="form-control" readonly="">
                                                             </div>
+                                                        </div>
+                                                        <div class="table-responsive">
+                                                            <table class="table table-inverse">
+                                                                <tbody>
+                                                                    <tr class="bg-danger">
+                                                                        <td class="text-center">Características del producto</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
                                                         </div>
                                                         <div class="form-group row mb-3">
                                                             <label class="col-sm-2 col-form-label text-right"> Tipo del Producto</label>
@@ -353,237 +357,273 @@
                                                                 <a href="simulador-conversion-auto.html" class="btn btn-block btn-inverse waves-effect waves-light" style="float: right;">Conversión Auto</a>
                                                             </div>
                                                         </div>
-                                                        <div class="form-group row mt-5">
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                                <h4 class="sub-title">Oferta Actual</h4>
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                                <h4 class="sub-title">Oferta Conversión Auto</h4>
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                                <h4 class="sub-title">Oferta Promocional</h4>
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                                <h4 class="sub-title">Ahorro</h4>
-                                                            </div>
-                                                        </div>
                                                 </div>
-                                                    <div class="card-block scroll">
-                                                        <div class="form-group row">
-                                                            <div class="col-md-2">
-                                                                <label class="col-form-label">Tasa de Interés Ordinaria Anual</label>
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                                <select name="select" class="form-control">
-                                                                    <option value=" opt8">10</option>
-                                                                    <option value="opt9">15</option>
-                                                                    <option value="opt10">20</option>
-                                                                    <option value="opt11">25</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <label class="col-sm-2 col-form-label">Tasa Mensual</label>
-                                                            <div class="col-sm-2">
-                                                                <input type="text" class="form-control" readonly="">
+                                                    <div class="card-block row">
+                                                        <div class="col-md-12">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-inverse">
+                                                                <tbody>
+                                                                    <tr class="bg-danger">
+                                                                        <td class="text-center">Condiciones Financieras del Crédito a Simular </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                            <div class="tablesaw-overflow scroll">
+                                                                <table class="tablesaw" data-tablesaw-mode="columntoggle" data-tablesaw-minimap>
+                                                                    <thead>
+                                                                        <tr class=" red-s">
+                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Concepto</th>
+                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">Oferta Actual</th>
+                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Oferta Conversión Auto<sup class="badge badge-inverse-danger badge-top-right ml-1">3</sup></th>
+                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Oferta Promocional</th>
+                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Ahorro</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody class="">
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Tasa de interés ordinaria anual</td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="select" class="form-control">
+                                                                                        <option value=" opt8">10</option>
+                                                                                        <option value="opt9">15</option>
+                                                                                        <option value="opt10">20</option>
+                                                                                        <option value="opt11">25</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" readonly="">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" readonly="">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-stylish-right text-danger red-s ml-4"></i>Tasa Mensual</td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" readonly="">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" readonly="">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" readonly="">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Plazo (meses)</td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="select" class="form-control">
+                                                                                        <option value=" opt8">10</option>
+                                                                                        <option value="opt9">15</option>
+                                                                                        <option value="opt10">20</option>
+                                                                                        <option value="opt11">25</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" readonly="">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" readonly="">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-stylish-right text-danger ml-4"></i>No. de Pagos</td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" readonly="">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" readonly="">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" readonly="">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title">
+                                                                                <i class="icofont icofont-hand-drawn-right red-s"></i>Periodicidad</td>
+                                                                            <td>
+                                                                                <select name="select" class="form-control">
+                                                                                    <option value=" opt8">Mensual</option>
+                                                                                    <option value="opt9">Bimestral</option>
+                                                                                    <option value="opt10">Trimestral</option>
+                                                                                    <option value="opt11">Anual</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" readonly="">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" readonly="">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Monto del crédito</td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" readonly="">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" readonly="">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Comisiones</td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-stylish-right text-danger ml-4"></i>Comisión por apertura (IVA incluido)</td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" readonly="">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-stylish-right text-danger ml-4"></i>Comisión por disposición (IVA incluido)</td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" readonly="">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Importe Neto del Crédito</td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control">
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Pago xxxxxx (IVA y prima de seguro incluidos)</td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control">
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>CAT promedio sin IVA<sup class="badge badge-inverse-danger badge-top-right ml-1">2</sup></td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control" readonly="">
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>¿El Cliente tiene deudas con otros Bancos?</td>
+                                                                            <td>
+                                                                                <select name="select" class="form-control">
+                                                                                    <option value=" opt8">Si</option>
+                                                                                    <option value="opt9">No</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"></td>
+                                                                            <td>
+                                                                                <a href="#" class="btn btn-block waves-effect waves-light btn-danger btn-outline-danger">Tabla de Amortización</a>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td>
+                                                                                <a href="#" class="btn btn-block waves-effect waves-light btn-danger btn-outline-danger">Tabla de Amortización promocional</a></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"></td>
+                                                                            <td>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td>
+                                                                                <a href="#" class="btn btn-block waves-effect waves-light btn-danger btn-outline-danger">Certificado promocional</a></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
                                                             </div>
                                                         </div>
-                                                        <div class="form-group row">
-                                                            <div class="col-md-2">
-                                                                <label class="col-form-label">Plazo</label>
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                                <select name="select" class="form-control">
-                                                                    <option value=" opt8">6</option>
-                                                                    <option value="opt9">12</option>
-                                                                    <option value="opt10">18</option>
-                                                                    <option value="opt11">20</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <label class="col-sm-2 col-form-label">No. de Pagos</label>
-                                                            <div class="col-sm-2">
-                                                                <input type="text" class="form-control" readonly="">
-                                                            </div>
-                                                            <label class="col-sm-2 col-form-label"></label>
-                                                            <div class="col-sm-2">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <label class="col-sm-2 col-form-label">Periocidad</label>
-                                                            <div class="col-sm-2">
-                                                                <select name="select" class="form-control">
-                                                                    <option value=" opt8">Mensual</option>
-                                                                    <option value="opt9">Bimestral</option>
-                                                                    <option value="opt10">Trimestral</option>
-                                                                    <option value="opt11">Anual</option>
-                                                                </select>
-                                                            </div>
-                                                            <label class="col-sm-2 col-form-label"></label>
-                                                            <div class="col-sm-2">
-                                                            </div>
-                                                            <label class="col-sm-2 col-form-label"></label>
-                                                            <div class="col-sm-2">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <label class="col-sm-2 col-form-label">Monto del Crédito</label>
-                                                            <div class="col-sm-2">
-                                                                <input type="text" class="form-control" readonly="">
-                                                            </div>
-                                                            <label class="col-sm-2 col-form-label"></label>
-                                                            <div class="col-sm-2">
-                                                            </div>
-                                                            <label class="col-sm-2 col-form-label"></label>
-                                                            <div class="col-sm-2">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <div class="col-sm-2">
-                                                            </div>
-                                                            <div class="col-sm-2 text-center">
-                                                                <a href="#" class="btn btn-block btn-primary waves-effect waves-light">Simular</a>
-                                                            </div>
-                                                            <div class="col-sm-2">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row mt-5">
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                            </div>
-                                                            <label class="col-sm-2 col-form-label">Comisiones</label>
-                                                            <div class="col-sm-2">
-                                                                <input type="text" class="form-control" readonly="">
-                                                            </div>
-                                                            <label class="col-sm-2 col-form-label"></label>
-                                                            <div class="col-sm-2">
-                                                            </div>
-                                                            <label class="col-sm-2 col-form-label"></label>
-                                                            <div class="col-sm-2">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label">Importe Neto del Crédito</label>
-                                                            <div class="col-sm-2">
-                                                                <div class="input-group input-group-button">
-                                                                    <input type="text" class="form-control" placeholder="Calcular">
-                                                                    <div class="input-group-append">
-                                                                        <button class="btn btn-primary" type="button"> <i class="fa fa-calculator"></i> </button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label">Pago xxx (IVA y prima de seguro incluidos)</label>
-                                                            <div class="col-sm-2">
-                                                                <div class="input-group input-group-button">
-                                                                    <input type="text" class="form-control" placeholder="Calcular">
-                                                                    <div class="input-group-append">
-                                                                        <button class="btn btn-primary" type="button"> <i class="fa fa-calculator"></i> </button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label">CAT Promedio Sin IVA</label>
-                                                            <div class="col-sm-2">
-                                                                <input type="text" class="form-control" readonly="">
-                                                            </div>
-                                                            <label class="col-sm-4 col-form-label"></label>
-                                                            <div class="col-sm-2">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label">Monto Total a Pagar</label>
-                                                            <div class="col-sm-2">
-                                                                <input type="text" class="form-control" readonly="">
-                                                            </div>
-                                                            <label class="col-sm-2 col-form-label"></label>
-                                                            <div class="col-sm-2">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label text-center">¿El Cliente tiene deudas con otros Bancos?</label>
-                                                            <div class="col-sm-2 col-md-2 col-xl-2 m-b-30">
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div class="form-group row mt-2">
+                                                            <label class="col-sm-5 col-form-label text-left"><i class="icofont icofont-hand-drawn-right red-s"></i>¿El Cliente formalizó el crédito?</label>
+                                                            <div class="col-sm-2 ">
                                                                 <select name="select" class="form-control">
                                                                     <option value=" opt8">Si</option>
                                                                     <option value="opt9">No</option>
                                                                 </select>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label text-center">¿El Cliente formalizó el crédito?</label>
-                                                            <div class="col-sm-2 col-md-2 col-xl-2 m-b-30">
-                                                                <select name="select" class="form-control">
-                                                                    <option value=" opt8">Si</option>
-                                                                    <option value="opt9">No</option>
-                                                                </select>
+                                                            <div class="col-sm-2 text-center mb-3">
+                                                                <a href="#" class="btn btn-block btn-primary waves-effect waves-light">Guardar</a>
                                                             </div>
                                                         </div>
-                                                        <div class="form-group row">
-                                                            <label class="col-sm-2 col-form-label text-center">Selecciona el motivo por el cual no se formalizó el crédito</label>
-                                                            <div class="col-sm-2 col-md-2 col-xl-2 m-b-30">
+                                                        <div class="form-group row mt-2 mb-3">
+                                                            <label class="col-sm-5 col-form-label text-left"><i class="icofont icofont-hand-drawn-right red-s"></i>Selecciona el motivo por el cual no se formalizó el crédito</label>
+                                                            <div class="col-sm-3 ">
                                                                 <select name="select" class="form-control">
                                                                     <option value=" opt8">Tasa de Interés es muy alta</option>
                                                                     <option value="opt9">Regresará en otro momento</option>
                                                                 </select>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <div class="col-sm-2">
-                                                            </div>
-                                                            <div class="col-sm-2 text-center m-1 mb-3">
+                                                            <div class="col-sm-2 text-center mb-3">
                                                                 <a href="#" class="btn btn-block btn-primary waves-effect waves-light">Guardar</a>
-                                                            </div>
-                                                            <div class="col-sm-2">
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-12 col-md-12">
@@ -612,7 +652,7 @@
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td><sup class="badge badge-inverse-danger badge-top-right ml-1">1</sup></td>
-                                                                                    <td>Cobro inicial sobre el monto de la primera disposición de crédito. <br>En cobros subsecuentes aplica sobre el saldo insoluto del crédito al primer día hábil de cada mes. <br>Cobro único sobre el monto de la primera disposición de crédito.</td>
+                                                                                    <td>Cobro inicial sobre el monto de la primera disposición de crédito. En cobros subsecuentes aplica sobre el saldo insoluto del crédito al primer día hábil de cada mes. <br>Cobro único sobre el monto de la primera disposición de crédito.</td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td><sup class="badge badge-inverse-danger badge-top-right ml-1">2</sup></td>
@@ -620,7 +660,7 @@
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td><sup class="badge badge-inverse-danger badge-top-right ml-1">3</sup></td>
-                                                                                    <td>CAT calculado para fines informativos y de comparación exclusivamente.</td>
+                                                                                    <td>Conversión Auto sujeto a la disposición de un crédito al consumo.</td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>

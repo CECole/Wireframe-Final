@@ -31,6 +31,27 @@
 </head>
 
 <body>
+    <!-- Inicio Modal-->
+    <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Mercado Abierto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <!-- <button type="button" class="btn btn-primary">Guardar</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modal -->
     <div class="theme-loader">
         <div class="loader-track">
             <div class="preloader-wrapper">
@@ -325,6 +346,15 @@
                                                                 </select>
                                                             </div>
                                                         </div>
+                                                        <div class="table-responsive">
+                                                            <table class="table table-inverse">
+                                                                <tbody>
+                                                                    <tr class="bg-danger">
+                                                                        <td class="text-center">Características del producto</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
                                                         <div class="form-group row mb-3">
                                                             <label class="col-sm-2 col-form-label text-left"> Tipo del Producto</label>
                                                             <div class="col-sm-2">
@@ -333,9 +363,9 @@
                                                                     <option value=" opt8">Efectivo Adquisición</option>
                                                                     <option value="opt9">Efectivo Restitución</option>
                                                                     <option value="opt10">Efectivo Sustitución</option>
-                                                                    <option value="opt11">Nómina  Adquisición</option>
-                                                                    <option value=" opt8">Nómina  Restitución</option>
-                                                                    <option value="opt9">Nómina  Sustitución</option>
+                                                                    <option value="opt11">Nómina Adquisición</option>
+                                                                    <option value=" opt8">Nómina Restitución</option>
+                                                                    <option value="opt9">Nómina Sustitución</option>
                                                                     <option value="opt10">Adquisición Línea Express</option>
                                                                     <option value="opt11">Restitución Línea Express</option>
                                                                 </select>
@@ -370,259 +400,267 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                        <div class="card-block row">
-                                                            <div class="col-md-12">
-                                                                <div class="tablesaw-overflow scroll">
-                                                                    <table class="tablesaw" data-tablesaw-mode="columntoggle" data-tablesaw-minimap>
-                                                                        <thead>
-                                                                            <tr class=" red-s">
-                                                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Concepto</th>
-                                                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">Oferta Actual</th>
-                                                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Oferta Conversión Auto<sup class="badge badge-inverse-danger badge-top-right ml-1">3</sup></th>
-                                                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Oferta Promcional</th>
-                                                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Ahorro</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody class="">
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Crédito a restituir</td>
-                                                                                <td>
-                                                                                    <div class="form-group">
-                                                                                        <select name="select" class="form-control">
-                                                                                            <option value=" opt8">10</option>
-                                                                                            <option value="opt9">15</option>
-                                                                                            <option value="opt10">20</option>
-                                                                                            <option value="opt11">25</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Tasa de interés ordinaria anual</td>
-                                                                                <td>
-                                                                                    <div class="form-group">
-                                                                                        <select name="select" class="form-control">
-                                                                                            <option value=" opt8">10</option>
-                                                                                            <option value="opt9">15</option>
-                                                                                            <option value="opt10">20</option>
-                                                                                            <option value="opt11">25</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-stylish-right text-danger red-s ml-4"></i>Tasa Mensual</td>
-                                                                                <td>
-                                                                                    <div class="form-group">
-                                                                                        <input type="text" class="form-control" readonly="">
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Plazo (meses)</td>
-                                                                                <td>
-                                                                                    <div class="form-group">
-                                                                                        <select name="select" class="form-control">
-                                                                                            <option value=" opt8">10</option>
-                                                                                            <option value="opt9">15</option>
-                                                                                            <option value="opt10">20</option>
-                                                                                            <option value="opt11">25</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-stylish-right text-danger ml-4"></i>No. de Pagos</td>
-                                                                                <td>
-                                                                                    <div class="form-group">
-                                                                                        <input type="text" class="form-control" readonly="">
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title">
-                                                                                    <i class="icofont icofont-hand-drawn-right red-s"></i>Periodicidad</td>
-                                                                                <td>
+                                                    <div class="card-block row">
+                                                        <div class="col-md-12">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-inverse">
+                                                                <tbody>
+                                                                    <tr class="bg-danger">
+                                                                        <td class="text-center">Condiciones Financieras del Crédito a Simular </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                            <div class="tablesaw-overflow scroll">
+                                                                <table class="tablesaw" data-tablesaw-mode="columntoggle" data-tablesaw-minimap>
+                                                                    <thead>
+                                                                        <tr class=" red-s">
+                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Concepto</th>
+                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">Oferta Actual</th>
+                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Oferta Conversión Auto<sup class="badge badge-inverse-danger badge-top-right ml-1">3</sup></th>
+                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Oferta Promcional</th>
+                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Ahorro</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody class="">
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Crédito a restituir</td>
+                                                                            <td>
+                                                                                <div class="form-group">
                                                                                     <select name="select" class="form-control">
-                                                                                        <option value=" opt8">Mensual</option>
-                                                                                        <option value="opt9">Bimestral</option>
-                                                                                        <option value="opt10">Trimestral</option>
-                                                                                        <option value="opt11">Anual</option>
+                                                                                        <option value=" opt8">10</option>
+                                                                                        <option value="opt9">15</option>
+                                                                                        <option value="opt10">20</option>
+                                                                                        <option value="opt11">25</option>
                                                                                     </select>
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Monto del crédito</td>
-                                                                                <td>
-                                                                                    <input type="text" class="form-control">
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-stylish-right text-danger ml-4"></i>Saldo del crédito a sustituir</td>
-                                                                                <td>
-                                                                                    <input type="text" class="form-control">
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Comisiones</td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-stylish-right text-danger ml-4"></i>Comisión por apertura (IVA incluido)</td>
-                                                                                <td>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Tasa de interés ordinaria anual</td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="select" class="form-control">
+                                                                                        <option value=" opt8">10</option>
+                                                                                        <option value="opt9">15</option>
+                                                                                        <option value="opt10">20</option>
+                                                                                        <option value="opt11">25</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-stylish-right text-danger red-s ml-4"></i>Tasa Mensual</td>
+                                                                            <td>
+                                                                                <div class="form-group">
                                                                                     <input type="text" class="form-control" readonly="">
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-stylish-right text-danger ml-4"></i>Comisión por disposición (IVA incluido)</td>
-                                                                                <td>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Plazo (meses)</td>
+                                                                            <td>
+                                                                                <div class="form-group">
+                                                                                    <select name="select" class="form-control">
+                                                                                        <option value=" opt8">10</option>
+                                                                                        <option value="opt9">15</option>
+                                                                                        <option value="opt10">20</option>
+                                                                                        <option value="opt11">25</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-stylish-right text-danger ml-4"></i>No. de Pagos</td>
+                                                                            <td>
+                                                                                <div class="form-group">
                                                                                     <input type="text" class="form-control" readonly="">
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-stylish-right text-danger ml-4"></i>Costo de los seguros en Santander<sup class="badge badge-inverse-danger badge-top-right ml-1">1</sup></td>
-                                                                                <td style="display: flex;">
-                                                                                    <input type="text" class="form-control" readonly="">
-                                                                                        <label class="text-center ml-2"><b> Primer pago</b></label>
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Importe Neto del Crédito</td>
-                                                                                <td>
-                                                                                    <input type="text" class="form-control">
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Pago xxxxxx (IVA y prima de seguro incluidos)</td>
-                                                                                <td>
-                                                                                    <input type="text" class="form-control">
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>CAT promedio sin IVA<sup class="badge badge-inverse-danger badge-top-right ml-1">2</sup></td>
-                                                                                <td>
-                                                                                    <input type="text" class="form-control" readonly="">
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Monto total a pagar</td>
-                                                                                <td>
-                                                                                    <input type="text" class="form-control" readonly="">
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Bonificación de los seguros<label class="badge badge-warning">!</label></td>
-                                                                                <td>
-                                                                                    <input type="text" class="form-control">
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Costo del seguro neto<label class="badge badge-warning">!</label></td>
-                                                                                <td>
-                                                                                    <input type="text" class="form-control" readonly="">
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Monto a capturar en SESAR<label class="badge badge-warning">!</label></td>
-                                                                                <td>
-                                                                                    <input type="text" class="form-control" readonly="">
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>¿El Cliente tiene deudas con otros Bancos?</td>
-                                                                                <td>
-                                                                                    
-                                                                <select name="select" class="form-control">
-                                                                    <option value=" opt8">Si</option>
-                                                                    <option value="opt9">No</option>
-                                                                </select>
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"></td>
-                                                                                <td>
-                                                                <a href="#" class="btn btn-block waves-effect waves-light btn-danger btn-outline-danger">Tabla de Amortización</a>
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td>
-                                                                <a href="#" class="btn btn-block waves-effect waves-light btn-danger btn-outline-danger">Tabla de Amortización promocional</a></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"></td>
-                                                                                <td>
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td>
-                                                                <a href="#" class="btn btn-block waves-effect waves-light btn-danger btn-outline-danger">Certificado promocional</a></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title">
+                                                                                <i class="icofont icofont-hand-drawn-right red-s"></i>Periodicidad</td>
+                                                                            <td>
+                                                                                <select name="select" class="form-control">
+                                                                                    <option value=" opt8">Mensual</option>
+                                                                                    <option value="opt9">Bimestral</option>
+                                                                                    <option value="opt10">Trimestral</option>
+                                                                                    <option value="opt11">Anual</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Monto del crédito</td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control">
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-stylish-right text-danger ml-4"></i>Saldo del crédito a sustituir</td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control">
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Comisiones</td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-stylish-right text-danger ml-4"></i>Comisión por apertura (IVA incluido)</td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control" readonly="">
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-stylish-right text-danger ml-4"></i>Comisión por disposición (IVA incluido)</td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control" readonly="">
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-stylish-right text-danger ml-4"></i>Costo de los seguros en Santander<sup class="badge badge-inverse-danger badge-top-right ml-1">1</sup></td>
+                                                                            <td style="display: flex;">
+                                                                                <input type="text" class="form-control" readonly="">
+                                                                                <label class="text-center ml-2"><b> Primer pago</b></label>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Importe Neto del Crédito</td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control">
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Pago xxxxxx (IVA y prima de seguro incluidos)</td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control">
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>CAT promedio sin IVA<sup class="badge badge-inverse-danger badge-top-right ml-1">2</sup></td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control" readonly="">
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Monto total a pagar</td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control" readonly="">
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Bonificación de los seguros<label class="badge badge-warning">!</label></td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control">
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Costo del seguro neto<label class="badge badge-warning">!</label></td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control" readonly="">
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Monto a capturar en SESAR<label class="badge badge-warning">!</label></td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control" readonly="">
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>¿El Cliente tiene deudas con otros Bancos?</td>
+                                                                            <td>
+                                                                                <select name="select" class="form-control">
+                                                                                    <option value=" opt8">Si</option>
+                                                                                    <option value="opt9">No</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"></td>
+                                                                            <td>
+                                                                                <a href="#" class="btn btn-block waves-effect waves-light btn-danger btn-outline-danger">Tabla de Amortización</a>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td>
+                                                                                <a href="#" class="btn btn-block waves-effect waves-light btn-danger btn-outline-danger">Tabla de Amortización promocional</a></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"></td>
+                                                                            <td>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td>
+                                                                                <a href="#" class="btn btn-block waves-effect waves-light btn-danger btn-outline-danger">Certificado promocional</a></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
                                                             </div>
                                                         </div>
-                                                        <div class="card-block">
+                                                    </div>
+                                                    <div class="card-block">
                                                         <div class="form-group row mt-2">
                                                             <label class="col-sm-5 col-form-label text-left"><i class="icofont icofont-hand-drawn-right red-s"></i>¿El Cliente formalizó el crédito?</label>
                                                             <div class="col-sm-2 ">
@@ -647,50 +685,49 @@
                                                                 <a href="#" class="btn btn-block btn-primary waves-effect waves-light">Guardar</a>
                                                             </div>
                                                         </div>
-                                                            
-                                                        </div>
-                                                        <div class="col-xl-12 col-md-12">
-                                                            <div class="card table-card">
-                                                                <div class="card-header">
-                                                                    <h5>Notas Informativas</h5>
-                                                                    <div class="card-header-right">
-                                                                        <ul class="list-unstyled card-option">
-                                                                            <li><i class="fa fa fa-wrench open-card-option"></i></li>
-                                                                            <li><i class="fa fa-window-maximize full-card"></i></li>
-                                                                            <li><i class="fa fa-minus minimize-card"></i></li>
-                                                                            <li><i class="fa fa-refresh reload-card"></i></li>
-                                                                            <li><i class="fa fa-trash close-card"></i></li>
-                                                                        </ul>
-                                                                    </div>
+                                                    </div>
+                                                    <div class="col-xl-12 col-md-12">
+                                                        <div class="card table-card">
+                                                            <div class="card-header">
+                                                                <h5>Notas Informativas</h5>
+                                                                <div class="card-header-right">
+                                                                    <ul class="list-unstyled card-option">
+                                                                        <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                                                                        <li><i class="fa fa-window-maximize full-card"></i></li>
+                                                                        <li><i class="fa fa-minus minimize-card"></i></li>
+                                                                        <li><i class="fa fa-refresh reload-card"></i></li>
+                                                                        <li><i class="fa fa-trash close-card"></i></li>
+                                                                    </ul>
                                                                 </div>
-                                                                <div class="card-block">
-                                                                    <div class="table-responsive">
-                                                                        <table class="table table-hover table-borderless">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th>Número</th>
-                                                                                    <th>Descripción</th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td><sup class="badge badge-inverse-danger badge-top-right ml-1">1</sup></td>
-                                                                                    <td>Cobro inicial sobre el monto de la primera disposición de crédito. En cobros subsecuentes aplica sobre el saldo insoluto del crédito al primer día hábil de cada mes.  <br>Cobro único sobre el monto de la primera disposición de crédito.</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><sup class="badge badge-inverse-danger badge-top-right ml-1">2</sup></td>
-                                                                                    <td>CAT calculado para fines informativos y de comparación exclusivamente.</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><sup class="badge badge-inverse-danger badge-top-right ml-1">3</sup></td>
-                                                                                    <td>Conversión Auto sujeto a la  disposición de un  crédito al  consumo.</td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
+                                                            </div>
+                                                            <div class="card-block">
+                                                                <div class="table-responsive">
+                                                                    <table class="table table-hover table-borderless">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Número</th>
+                                                                                <th>Descripción</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td><sup class="badge badge-inverse-danger badge-top-right ml-1">1</sup></td>
+                                                                                <td>Cobro inicial sobre el monto de la primera disposición de crédito. En cobros subsecuentes aplica sobre el saldo insoluto del crédito al primer día hábil de cada mes. <br>Cobro único sobre el monto de la primera disposición de crédito.</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><sup class="badge badge-inverse-danger badge-top-right ml-1">2</sup></td>
+                                                                                <td>CAT calculado para fines informativos y de comparación exclusivamente.</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><sup class="badge badge-inverse-danger badge-top-right ml-1">3</sup></td>
+                                                                                <td>Conversión Auto sujeto a la disposición de un crédito al consumo.</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -744,18 +781,6 @@
     <p>Sorry for the inconvenience!</p>
 </div>
 <![endif]-->
-    <script>
-    var TablesawConfig = {
-        i18n: {
-            swipePreviousColumn: "The column before",
-            swipeNextColumn: "The column after"
-        },
-        swipe: {
-            horizontalThreshold: 45,
-            verticalThreshold: 45
-        }
-    };
-    </script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
@@ -771,5 +796,10 @@
     <script src="js/vertical-layout.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
+<script>
+$(function() {
+    $('#basicExampleModal').modal('show');
+});
+</script>
 
 </html>
