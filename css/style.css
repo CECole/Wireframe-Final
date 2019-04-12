@@ -6655,7 +6655,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .badge-danger {
-    background: #ff5252
+    background: #ec0000d6
 }
 
 .badge-success {
@@ -11434,7 +11434,7 @@ body.menu-bottom #collapse-menu {
 }
 
 .btn-info {
-    background-color: #00bcd4;
+    background-color: #1BB3BC;
     border-color: #00bcd4;
     color: #fff;
     cursor: pointer;
@@ -11443,8 +11443,8 @@ body.menu-bottom #collapse-menu {
 }
 
 .btn-info:hover {
-    background-color: #08e3ff;
-    border-color: #08e3ff
+    background-color: #137E84;
+    border-color: #08e3ff;
 }
 
 .btn-info:active {
@@ -11458,8 +11458,8 @@ body.menu-bottom #collapse-menu {
 .btn-info:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: #fff;
-    background-color: #08e3ff
+    color: #1BB3BC;
+    background-color: #fff;
 }
 
 .btn-info.disabled {
