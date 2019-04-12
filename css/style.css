@@ -11363,8 +11363,8 @@ body.menu-bottom #collapse-menu {
 }
 
 .btn-success {
-    background-color: #11c15b;
-    border-color: #11c15b;
+    background-color: #63BA68;
+    border-color: #63BA68;
     color: #fff;
     cursor: pointer;
     -webkit-transition: all ease-in .3s;
@@ -11372,8 +11372,8 @@ body.menu-bottom #collapse-menu {
 }
 
 .btn-success:hover {
-    background-color: #1aeb72;
-    border-color: #1aeb72
+    background-color: #3A8340;
+    border-color: #3A8340
 }
 
 .btn-success:active {
@@ -11387,8 +11387,9 @@ body.menu-bottom #collapse-menu {
 .btn-success:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: #fff;
-    background-color: #1aeb72
+    color: #3A8340;
+    background-color: #fff;
+    border-color: #3A8340;
 }
 
 .btn-success.disabled {
@@ -11406,8 +11407,11 @@ body.menu-bottom #collapse-menu {
 }
 
 .btn-inverse:hover {
-    background-color: #4c626d;
-    border-color: #4c626d
+    background-color: #9E3667 !important;
+    border-color: #732645;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
 }
 
 .btn-inverse:active {
@@ -11418,11 +11422,10 @@ body.menu-bottom #collapse-menu {
     color: #fff
 }
 
-.btn-inverse:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none;
+.btn-inverse:focus {    
+    background-color: #CC0000;
+    border-color: #CC0000;
     color: #fff;
-    background-color: #4c626d
 }
 
 .btn-inverse.disabled {
