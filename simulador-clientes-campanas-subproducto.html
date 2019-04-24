@@ -63,6 +63,7 @@
     .radio .helper::before {
         top: -7px;
     }
+
     </style>
 </head>
 
@@ -404,7 +405,7 @@
                                                                 </tbody>
                                                             </table>
                                                         </div>
-                                                                <table id="order-table" class="table table-striped table-bordered nowrap">
+                                                                <table id="order-table" class="table table-striped table-bordered nowrap table-1">
                                                                     <thead>
                                                                         <tr class="text-center">
                                                                             <td colspan="7"> <b class="red-s">Oferta Máxima por Plazo</b> </td>
@@ -495,13 +496,13 @@
                                                         <div class="row">
                                                             <div class="col-md-12">
                                                                 <div class="tablesaw-overflow scroll">
-                                                                    <table class="tablesaw" data-tablesaw-mode="columntoggle" data-tablesaw-minimap>
+                                                                    <table class="tablesaw" data-tablesaw-mode="stack">
                                                                         <thead>
                                                                             <tr class=" red-s">
                                                                                 <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Concepto</th>
                                                                                 <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">Oferta Actual</th>
-                                                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Oferta Conversión Auto<sup class="badge badge-danger badge-top-right ml-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Conversión Auto sujeto a la disposición de un crédito al consumo.">3</sup></th>
-                                                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Oferta Promcional</th>
+                                                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Oferta Conversión Auto<sup class="badge badge-inverse badge-top-right ml-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Conversión Auto sujeto a la disposición de un crédito al consumo.">3</sup></th>
+                                                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Oferta Promocional</th>
                                                                                 <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Ahorro</th>
                                                                             </tr>
                                                                         </thead>
@@ -594,7 +595,7 @@
                                                                                 <td></td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td class="title"><i class="icofont icofont-stylish-right text-danger ml-4"></i>Costo de los seguros en Santander<sup class="badge badge badge-danger badge-top-right ml-1" data-toggle="tooltip" data-placement="top" title="" data-original-title=" Cobro inicial sobre el monto de la primera disposición de crédito. En cobros subsecuentes aplica sobre el saldo insoluto del crédito al primer día hábil de cada mes. 
+                                                                                <td class="title"><i class="icofont icofont-stylish-right text-danger ml-4"></i>Costo de los seguros en Santander<sup class="badge badge badge-inverse badge-top-right ml-1" data-toggle="tooltip" data-placement="top" title="" data-original-title=" Cobro inicial sobre el monto de la primera disposición de crédito. En cobros subsecuentes aplica sobre el saldo insoluto del crédito al primer día hábil de cada mes. 
 Cobro único sobre el monto de la primera disposición de crédito.">1</sup></td>
                                                                                 <td>
                                                                                     <input type="text" class="form-control" readonly="">
@@ -622,7 +623,7 @@ Cobro único sobre el monto de la primera disposición de crédito.">1</sup></td
                                                                                 <td></td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>CAT promedio sin IVA<sup class="badge badge-danger badge-top-right ml-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="CAT calculado para fines informativos y de comparación exclusivamente.">2</sup></td>
+                                                                                <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>CAT promedio sin IVA<sup class="badge badge-inverse badge-top-right ml-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="CAT calculado para fines informativos y de comparación exclusivamente.">2</sup></td>
                                                                                 <td>
                                                                                     <input type="text" class="form-control" readonly="">
                                                                                 </td>
@@ -654,11 +655,11 @@ Cobro único sobre el monto de la primera disposición de crédito.">1</sup></td
                                                                             <tr>
                                                                                 <td class="title"></td>
                                                                                 <td>
-                                                                                    <a href="#" class="btn btn-block waves-effect waves-light btn-danger btn-outline-danger">Tabla de Amortización</a>
+                                                                                    <a href="#" class="btn btn-block waves-effect waves-light btn-danger btn-outline-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tabla de Amortización.">Descargar</a>
                                                                                 </td>
                                                                                 <td></td>
                                                                                 <td>
-                                                                                    <a href="#" class="btn btn-block waves-effect waves-light btn-danger btn-outline-danger">Tabla de Amortización promocional</a></td>
+                                                                                    <a href="#" class="btn btn-block waves-effect waves-light btn-danger btn-outline-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tabla de Amortización Promocional.">Descargar</a></td>
                                                                                 <td></td>
                                                                             </tr>
                                                                             <tr>
@@ -679,7 +680,7 @@ Cobro único sobre el monto de la primera disposición de crédito.">1</sup></td
                                                         <div class="card-block">
                                                             <div class="form-group row mt-2">
                                                                 <label class="col-sm-5 col-form-label "><i class="icofont icofont-hand-drawn-right red-s"></i>¿El Cliente formalizó el crédito?</label>
-                                                                <div class="col-sm-2 ">
+                                                                <div class="col-sm-3 ">
                                                                     <select name="select" class="form-control">
                                                                         <option value=" opt8">Si</option>
                                                                         <option value="opt9">No</option>
@@ -709,10 +710,7 @@ Cobro único sobre el monto de la primera disposición de crédito.">1</sup></td
                                                                     <div class="card-header-right">
                                                                         <ul class="list-unstyled card-option">
                                                                             <li><i class="fa fa fa-wrench open-card-option"></i></li>
-                                                                            <li><i class="fa fa-window-maximize full-card"></i></li>
-                                                                            <li><i class="fa fa-minus minimize-card"></i></li>
-                                                                            <li><i class="fa fa-refresh reload-card"></i></li>
-                                                                            <li><i class="fa fa-trash close-card"></i></li>
+                                                                            <li><i class="fa fa-window-maximize full-card"></i></li> 
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -727,15 +725,15 @@ Cobro único sobre el monto de la primera disposición de crédito.">1</sup></td
                                                                             </thead>
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td><sup class="badge badge-danger badge-top-right ml-1">1</sup></td>
+                                                                                    <td><sup class="badge badge-inverse badge-top-right ml-1">1</sup></td>
                                                                                     <td>Cobro inicial sobre el monto de la primera disposición de crédito. En cobros subsecuentes aplica sobre el saldo insoluto del crédito al primer día hábil de cada mes. <br>Cobro único sobre el monto de la primera disposición de crédito.</td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><sup class="badge badge-danger badge-top-right ml-1">2</sup></td>
+                                                                                    <td><sup class="badge badge-inverse badge-top-right ml-1">2</sup></td>
                                                                                     <td>CAT calculado para fines informativos y de comparación exclusivamente.</td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td><sup class="badge badge-danger badge-top-right ml-1">3</sup></td>
+                                                                                    <td><sup class="badge badge-inverse badge-top-right ml-1">3</sup></td>
                                                                                     <td>Conversión Auto sujeto a la disposición de un crédito al consumo.</td>
                                                                                 </tr>
                                                                             </tbody>

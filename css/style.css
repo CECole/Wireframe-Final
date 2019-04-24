@@ -6663,7 +6663,8 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .badge-inverse {
-    background: #37474f
+    background: #ffffff;
+    color: grey;
 }
 
 .badge-info {
@@ -23944,4 +23945,9 @@ div.scroll  {
 
 .red-s {
     color: #EC0000;
+}
+
+
+    .table-1 {
+    text-align: center;
 }
