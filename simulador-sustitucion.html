@@ -32,6 +32,139 @@
 
 <body>
     <!-- Inicio Modal-->
+    <!-- <button type="button" class="btn btn-success waves-effect m-b-10" data-toggle="modal" data-target="#myModal">Multi Model</button> -->
+    <div class="modal fade modal-flex" id="Modal-Multi" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                    <span aria-hidden="true">&times;</span>
+                                                                                </button> 
+                                                                                <h4 class="modal-title">Modal title</h4> -->
+                </div>
+                <div class="modal-body text-center">
+                    <p class="m-t-10">Bienvenid@ al Simulador del Mercado Abierto</p>
+                    <div>
+                        <button type="button" class="btn btn-default waves-effect m-t-20 " data-toggle="modal" data-target="#meta-Modal">Aceptar</button>
+                    </div>
+                </div>
+                <!-- 
+                                                                            <div class="modal-footer">
+                                                                                <button type="button" class="btn btn-default waves-effect " data-dismiss="modal">Close</button>
+                                                                                <button type="button" class="btn btn-primary waves-effect waves-light ">Save changes</button>
+                                                                            </div> -->
+            </div>
+        </div>
+        <div class="modal fade" id="meta-Modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Ofertas Promocionales</h4>
+                    </div>
+                    <div class="modal-body">
+                        <!-- <h5>Small Modal</h5> -->
+                        <p>Exísten algunas ofertas promocionales para este cliente, por favor elija una.</p>
+                        <div class=" m-b-30">
+                            <h4 class="sub-title">Ofertas Promocionales:</h4>
+                            <div class="form-radio">
+                                <form>
+                                    <div class="radio radio-inline">
+                                        <label>
+                                            <input type="radio" name="radio" checked="checked">
+                                            <i class="helper"></i>Oferta Promocional 1
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-inline">
+                                        <label>
+                                            <input type="radio" name="radio">
+                                            <i class="helper"></i>Oferta Promocional 2
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-inline">
+                                        <label>
+                                            <input type="radio" disabled="" name="radio">
+                                            <i class="helper"></i>Oferta Promocional 3
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal 1</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="container"></div>
+                <div class="modal-body">Content for the dialog / modal goes here.
+                    <p class="p-t-40 p-b-40">more content</p>
+                    <a data-toggle="modal" href="#myModal2" class="btn btn-primary">Launch modal</a>
+                </div>
+                <div class="modal-footer"> <a href="#" data-dismiss="modal" class="btn">Close</a>
+                    <a href="#" class="btn btn-primary">Save changes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal 2</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="container"></div>
+                <div class="modal-body">Content for the dialog / modal goes here.
+                    <p class="p-t-30 p-b-40">come content</p>
+                    <a data-toggle="modal" href="#myModal3" class="btn btn-primary">Launch modal</a>
+                </div>
+                <div class="modal-footer"> <a href="#" data-dismiss="modal" class="btn">Close</a>
+                    <a href="#" class="btn btn-primary">Save changes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal 3</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="container"></div>
+                <div class="modal-body">Content for the dialog / modal goes here.
+                    <a data-toggle="modal" href="#myModal4" class="btn btn-primary">Launch modal</a>
+                </div>
+                <div class="modal-footer"> <a href="#" data-dismiss="modal" class="btn">Close</a>
+                    <a href="#" class="btn btn-primary">Save changes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal4">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal 4</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="container"></div>
+                <div class="modal-body">Content for the dialog / modal goes here.</div>
+                <div class="modal-footer"> <a href="#" data-dismiss="modal" class="btn">Close</a>
+                    <a href="#" class="btn btn-primary">Save changes</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -437,42 +570,42 @@
                                                                             <td></td>
                                                                             <td></td>
                                                                         </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Tasa de interés ordinaria anual</td>
-                                                                                <td>
-                                                                                    <div class="form-group" style="display: flex;">
-                                                                                        <select name="select" class="form-control" style="width: auto;">
-                                                                                            <option value=" opt8">10</option>
-                                                                                            <option value="opt9">15</option>
-                                                                                            <option value="opt10">20</option>
-                                                                                            <option value="opt11">25</option>
-                                                                                        </select>
-                                                                                        <label class="title ml-2 mr-2"> Tasa Mensual </label>
-                                                                                        <input type="text" class="form-control" readonly="">
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Plazo (meses)</td>
-                                                                                <td>
-                                                                                    <div class="form-group" style="display: flex;">
-                                                                                        <select name="select" class="form-control" style="width: auto;">
-                                                                                            <option value=" opt8">10</option>
-                                                                                            <option value="opt9">15</option>
-                                                                                            <option value="opt10">20</option>
-                                                                                            <option value="opt11">25</option>
-                                                                                        </select>
-                                                                                        <label class="title ml-2 mr-2">No. de Pagos</label>
-                                                                                        <input type="text" class="form-control" readonly="">
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Tasa de interés ordinaria anual</td>
+                                                                            <td>
+                                                                                <div class="form-group" style="display: flex;">
+                                                                                    <select name="select" class="form-control" style="width: auto;">
+                                                                                        <option value=" opt8">10</option>
+                                                                                        <option value="opt9">15</option>
+                                                                                        <option value="opt10">20</option>
+                                                                                        <option value="opt11">25</option>
+                                                                                    </select>
+                                                                                    <label class="title ml-2 mr-2"> Tasa Mensual </label>
+                                                                                    <input type="text" class="form-control" readonly="">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Plazo (meses)</td>
+                                                                            <td>
+                                                                                <div class="form-group" style="display: flex;">
+                                                                                    <select name="select" class="form-control" style="width: auto;">
+                                                                                        <option value=" opt8">10</option>
+                                                                                        <option value="opt9">15</option>
+                                                                                        <option value="opt10">20</option>
+                                                                                        <option value="opt11">25</option>
+                                                                                    </select>
+                                                                                    <label class="title ml-2 mr-2">No. de Pagos</label>
+                                                                                    <input type="text" class="form-control" readonly="">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                        </tr>
                                                                         <tr>
                                                                             <td class="title">
                                                                                 <i class="icofont icofont-hand-drawn-right red-s"></i>Periodicidad</td>
@@ -535,8 +668,7 @@
                                                                             <td class="title">
                                                                                 <i class="icofont icofont-stylish-right text-danger ml-4"></i>Costo de los seguros en Santander<sup class="badge badge-inverse badge-top-right ml-1">1</sup></td>
                                                                             <td>
-                                                                                <div class="form-group" style="display: flex;"> 
-                                                                                    
+                                                                                <div class="form-group" style="display: flex;">
                                                                                 </div>
                                                                             </td>
                                                                             <td></td>
@@ -780,7 +912,7 @@
 </body>
 <script>
 $(function() {
-    $('#basicExampleModal').modal('show');
+    $('#Modal-Multi').modal('show');
 });
 </script>
 
