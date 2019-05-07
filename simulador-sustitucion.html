@@ -35,28 +35,7 @@
     <!-- <button type="button" class="btn btn-success waves-effect m-b-10" data-toggle="modal" data-target="#myModal">Multi Model</button> -->
     <div class="modal fade modal-flex" id="Modal-Multi" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                                    <span aria-hidden="true">&times;</span>
-                                                                                </button> 
-                                                                                <h4 class="modal-title">Modal title</h4> -->
-                </div>
-                <div class="modal-body text-center">
-                    <p class="m-t-10">Bienvenid@ al Simulador del Mercado Abierto</p>
-                    <div>
-                        <button type="button" class="btn btn-default waves-effect m-t-20 " data-toggle="modal" data-target="#meta-Modal">Aceptar</button>
-                    </div>
-                </div>
-                <!-- 
-                                                                            <div class="modal-footer">
-                                                                                <button type="button" class="btn btn-default waves-effect " data-dismiss="modal">Close</button>
-                                                                                <button type="button" class="btn btn-primary waves-effect waves-light ">Save changes</button>
-                                                                            </div> -->
-            </div>
-        </div>
-        <div class="modal fade" id="meta-Modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog " role="document">
+            
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title">Ofertas Promocionales</h4>
@@ -94,8 +73,47 @@
                         <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Aceptar</button>
                     </div>
                 </div>
+        </div><!-- 
+        <div class="modal fade" id="meta-Modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Ofertas Promocionales</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Exísten algunas ofertas promocionales para este cliente, por favor elija una.</p>
+                        <div class=" m-b-30">
+                            <h4 class="sub-title">Ofertas Promocionales:</h4>
+                            <div class="form-radio">
+                                <form>
+                                    <div class="radio radio-inline">
+                                        <label>
+                                            <input type="radio" name="radio" checked="checked">
+                                            <i class="helper"></i>Oferta Promocional 1
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-inline">
+                                        <label>
+                                            <input type="radio" name="radio">
+                                            <i class="helper"></i>Oferta Promocional 2
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-inline">
+                                        <label>
+                                            <input type="radio" disabled="" name="radio">
+                                            <i class="helper"></i>Oferta Promocional 3
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Aceptar</button>
+                    </div>
+                </div>
             </div>
-        </div>
+        </div> -->
     </div>
     <div class="modal fade" id="myModal">
         <div class="modal-dialog">
@@ -417,7 +435,7 @@
                                 <div class="row align-items-center">
                                     <div class="col-md-8">
                                         <div class="page-header-title">
-                                            <h5 class="m-b-5">Simulador</h5>
+                                            <h5 class="m-b-5">Simulador | Mercado Abierto - Sustitución</h5>
                                             <!-- <p class="m-b-0">Lorem Ipsum is simply dummy text of the printing</p> -->
                                         </div>
                                     </div>
@@ -440,10 +458,10 @@
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="card">
-                                                    <div class="card-header">
-                                                        <h5>Mercado Abierto - Sustitución</h5>
-                                                        <!-- <span>Add class of <code>.form-control</code> with <code>&lt;input&gt;</code> tag</span> -->
-                                                    </div>
+                                                    <!--<div class="card-header">
+                                                         <h5>Mercado Abierto - Sustitución</h5>
+                                                        <span>Add class of <code>.form-control</code> with <code>&lt;input&gt;</code> tag</span> 
+                                                    </div>-->
                                                     <div class="card-block">
                                                         <div class="form-group row">
                                                             <label class="col-sm-1 col-form-label text-left">Cliente</label>
@@ -517,7 +535,7 @@
                                                                 <input type="text" class="form-control">
                                                             </div>
                                                         </div>
-                                                        <div class="form-group row">
+                                                        <div class="form-group row" style="margin-bottom: 20px;">
                                                             <label class="col-sm-2 col-form-label text-left">Forma de Pago del Seguro</label>
                                                             <div class="col-sm-2">
                                                                 <input type="text" class="form-control">
@@ -546,11 +564,11 @@
                                                                 <table class="tablesaw" data-tablesaw-mode="stack">
                                                                     <thead>
                                                                         <tr class=" red-s">
-                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Concepto</th>
-                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="2">Oferta Actual</th>
-                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Oferta Conversión Auto<sup class="badge badge-inverse badge-top-right ml-1">3</sup></th>
-                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="5">Oferta Promocional</th>
-                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Ahorro</th>
+                                                                            <th class="text-center" scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Concepto</th>
+                                                                            <th class="text-center" scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="2">Oferta Actual</th>
+                                                                            <th class="text-center" scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Oferta Conversión Auto<sup class="badge badge-inverse badge-top-right ml-1">3</sup></th>
+                                                                            <th class="text-center" scope="col" data-tablesaw-sortable-col data-tablesaw-priority="5">Oferta Promocional</th>
+                                                                            <th class="text-center" scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Ahorro</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody class="">
