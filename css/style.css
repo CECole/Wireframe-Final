@@ -23951,3 +23951,11 @@ div.scroll  {
     .table-1 {
     text-align: center;
 }
+
+
+.vl {
+      background-color: white;
+    height: 24px;
+    width: 22px;
+    padding: 4px;
+}
