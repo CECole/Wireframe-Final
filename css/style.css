@@ -6663,7 +6663,8 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .badge-inverse {
-    background: #ffffff;
+    /*background: #ffffff;*/
+    margin-left: -5px !important;
     color: grey;
 }
 

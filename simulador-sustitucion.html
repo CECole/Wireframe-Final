@@ -35,45 +35,45 @@
     <!-- <button type="button" class="btn btn-success waves-effect m-b-10" data-toggle="modal" data-target="#myModal">Multi Model</button> -->
     <div class="modal fade modal-flex" id="Modal-Multi" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
-            
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Ofertas Promocionales</h4>
-                    </div>
-                    <div class="modal-body">
-                        <!-- <h5>Small Modal</h5> -->
-                        <p>Exísten algunas ofertas promocionales para este cliente, por favor elija una.</p>
-                        <div class=" m-b-30">
-                            <h4 class="sub-title">Ofertas Promocionales:</h4>
-                            <div class="form-radio">
-                                <form>
-                                    <div class="radio radio-inline">
-                                        <label>
-                                            <input type="radio" name="radio" checked="checked">
-                                            <i class="helper"></i>Oferta Promocional 1
-                                        </label>
-                                    </div>
-                                    <div class="radio radio-inline">
-                                        <label>
-                                            <input type="radio" name="radio">
-                                            <i class="helper"></i>Oferta Promocional 2
-                                        </label>
-                                    </div>
-                                    <div class="radio radio-inline">
-                                        <label>
-                                            <input type="radio" disabled="" name="radio">
-                                            <i class="helper"></i>Oferta Promocional 3
-                                        </label>
-                                    </div>
-                                </form>
-                            </div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Ofertas Promocionales</h4>
+                </div>
+                <div class="modal-body">
+                    <!-- <h5>Small Modal</h5> -->
+                    <p>Exísten algunas ofertas promocionales para este cliente, por favor elija una.</p>
+                    <div class=" m-b-30">
+                        <h4 class="sub-title">Ofertas Promocionales:</h4>
+                        <div class="form-radio">
+                            <form>
+                                <div class="radio radio-inline">
+                                    <label>
+                                        <input type="radio" name="radio" checked="checked">
+                                        <i class="helper"></i>Oferta Promocional 1
+                                    </label>
+                                </div>
+                                <div class="radio radio-inline">
+                                    <label>
+                                        <input type="radio" name="radio">
+                                        <i class="helper"></i>Oferta Promocional 2
+                                    </label>
+                                </div>
+                                <div class="radio radio-inline">
+                                    <label>
+                                        <input type="radio" disabled="" name="radio">
+                                        <i class="helper"></i>Oferta Promocional 3
+                                    </label>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Aceptar</button>
-                    </div>
                 </div>
-        </div><!-- 
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+        <!-- 
         <div class="modal fade" id="meta-Modal" tabindex="-1" role="dialog">
             <div class="modal-dialog " role="document">
                 <div class="modal-content">
@@ -802,11 +802,54 @@
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
+                                                                <div class="col-xl-12 col-md-12">
+                                                                    <div class="card table-card mt-4">
+                                                                        <div class="card-header">
+                                                                            <h5>Notas Informativas</h5>
+                                                                            <div class="card-header-right">
+                                                                                <ul class="list-unstyled card-option">
+                                                                                    <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                                                                                    <li><i class="fa fa-window-maximize full-card"></i></li>
+                                                                                    <li><i class="fa fa-minus minimize-card"></i></li>
+                                                                                    <!-- 
+                                                                        <li><i class="fa fa-refresh reload-card"></i></li>
+                                                                        <li><i class="fa fa-trash close-card"></i></li> -->
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="card-block">
+                                                                            <div class="table-responsive">
+                                                                                <table class="table table-hover table-borderless">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>Número</th>
+                                                                                            <th>Descripción</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td><sup class="badge badge badge-danger badge-top-right ml-1">1</sup></td>
+                                                                                            <td>Cobro inicial sobre el monto de la primera disposición de crédito. En cobros subsecuentes aplica sobre el saldo insoluto del crédito al primer día <br> hábil de cada mes. <br>Cobro único sobre el monto de la primera disposición de crédito.</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td><sup class="badge badge badge-danger badge-top-right ml-1">2</sup></td>
+                                                                                            <td>CAT calculado para fines informativos y de comparación exclusivamente.</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td><sup class="badge badge badge-danger badge-top-right ml-1">3</sup></td>
+                                                                                            <td>Conversión Auto sujeto a la disposición de un crédito al consumo.</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="card-block">
-                                                        <div class="form-group row mt-2">
+                                                        <div class="form-group row mt-4">
                                                             <label class="col-sm-5 col-form-label text-left"><i class="icofont icofont-hand-drawn-right red-s"></i>¿El Cliente formalizó el crédito?</label>
                                                             <div class="col-sm-3 ">
                                                                 <select name="select" class="form-control">
@@ -828,48 +871,6 @@
                                                             </div>
                                                             <div class="col-sm-2 text-center">
                                                                 <a href="#" class="btn btn-block btn-info waves-effect waves-light">Guardar</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-12 col-md-12">
-                                                        <div class="card table-card">
-                                                            <div class="card-header">
-                                                                <h5>Notas Informativas</h5>
-                                                                <div class="card-header-right">
-                                                                    <ul class="list-unstyled card-option">
-                                                                        <li><i class="fa fa fa-wrench open-card-option"></i></li>
-                                                                        <li><i class="fa fa-window-maximize full-card"></i></li>
-                                                                        <li><i class="fa fa-minus minimize-card"></i></li>
-                                                                        <li><i class="fa fa-refresh reload-card"></i></li>
-                                                                        <li><i class="fa fa-trash close-card"></i></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-block">
-                                                                <div class="table-responsive">
-                                                                    <table class="table table-hover table-borderless">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>Número</th>
-                                                                                <th>Descripción</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td><sup class="badge badge badge-inverse badge-top-right ml-1">1</sup></td>
-                                                                                <td>Cobro inicial sobre el monto de la primera disposición de crédito. En cobros subsecuentes aplica sobre el saldo insoluto del crédito al primer día <br> hábil de cada mes. <br>Cobro único sobre el monto de la primera disposición de crédito.</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td><sup class="badge badge badge-inverse badge-top-right ml-1">2</sup></td>
-                                                                                <td>CAT calculado para fines informativos y de comparación exclusivamente.</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td><sup class="badge badge badge-inverse badge-top-right ml-1">3</sup></td>
-                                                                                <td>Conversión Auto sujeto a la disposición de un crédito al consumo.</td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>

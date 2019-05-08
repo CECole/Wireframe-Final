@@ -310,7 +310,7 @@ a.tablesaw-btn {
 
 .tablesaw th,
 .tablesaw td {
-  padding: .5em .7em;
+  padding: 0em .7em;
   text-align: left;
   vertical-align: middle;
 }

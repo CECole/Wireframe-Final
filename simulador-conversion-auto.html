@@ -87,9 +87,9 @@
             <nav class="navbar header-navbar pcoded-header">
                 <div class="navbar-wrapper">
                     <div class="navbar-logo">
-                        <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#!">
+                        <!-- <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#!">
                             <i class="ti-menu"></i>
-                        </a>
+                        </a> -->
                         <a href="menu.html">
                             <img class="img-fluid" src="img/logo.png" alt="Theme-Logo" />
                         </a>
@@ -280,6 +280,11 @@
                             </div>
                         </div>
                         <div class="pcoded-inner-content">
+                            <div class="vl"><div class="navbar-logo">
+                                <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#!">
+                                    <i class="ti-menu red-s"></i>
+                                </a>
+                            </div></div>
                             <div class="main-body">
                                 <div class="page-wrapper">
                                     <div class="page-body">
@@ -374,45 +379,28 @@
                                                                 <table class="tablesaw" >
                                                                     <thead>
                                                                         <tr class=" red-s">
-                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Concepto</th>
-                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">Oferta Actual</th>
-                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Oferta Conversión Auto<sup class="badge badge-inverse badge-top-right ml-1">3</sup></th>
-                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Oferta Promocional</th>
-                                                                            <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Ahorro</th>
+                                                                            <th class="text-center" scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Concepto</th>
+                                                                            <th class="text-center" scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">Oferta Actual</th>
+                                                                            <th class="text-center" scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Oferta Conversión Auto<sup class="badge badge-inverse badge-top-right ml-1">3</sup></th>
+                                                                            <th class="text-center" scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Oferta Promocional</th>
+                                                                            <th class="text-center" scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Ahorro</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody class="">
                                                                         <tr>
                                                                             <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Tasa de interés ordinaria anual</td>
                                                                             <td>
-                                                                                <div class="form-group">
-                                                                                    <select name="select" class="form-control">
-                                                                                        <option value=" opt8">10</option>
-                                                                                        <option value="opt9">15</option>
-                                                                                        <option value="opt10">20</option>
-                                                                                        <option value="opt11">25</option>
-                                                                                    </select>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="form-group">
-                                                                                    <input type="text" class="form-control" readonly="">
-                                                                                </div>
-                                                                            </td>
-                                                                            <td></td>
-                                                                            <td>
-                                                                                <div class="form-group">
-                                                                                    <input type="text" class="form-control" readonly="">
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="title"><i class="icofont icofont-stylish-right text-danger red-s ml-4"></i>Tasa Mensual</td>
-                                                                            <td>
-                                                                                <div class="form-group">
-                                                                                    <input type="text" class="form-control" readonly="">
-                                                                                </div>
-                                                                            </td>
+                                                                                    <div class="form-group" style="display: flex;">
+                                                                                        <select name="select" class="form-control">
+                                                                                            <option value=" opt8">10</option>
+                                                                                            <option value="opt9">15</option>
+                                                                                            <option value="opt10">20</option>
+                                                                                            <option value="opt11">25</option>
+                                                                                        </select>
+                                                                                        <label class="title ml-2 mr-2"> Tasa Mensual </label>
+                                                                                        <input type="text" class="form-control" readonly="">
+                                                                                    </div>
+                                                                                </td>
                                                                             <td>
                                                                                 <div class="form-group">
                                                                                     <input type="text" class="form-control" readonly="">
@@ -427,35 +415,18 @@
                                                                         </tr>
                                                                         <tr>
                                                                             <td class="title"><i class="icofont icofont-hand-drawn-right red-s"></i>Plazo (meses)</td>
-                                                                            <td>
-                                                                                <div class="form-group">
-                                                                                    <select name="select" class="form-control">
-                                                                                        <option value=" opt8">10</option>
-                                                                                        <option value="opt9">15</option>
-                                                                                        <option value="opt10">20</option>
-                                                                                        <option value="opt11">25</option>
-                                                                                    </select>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="form-group">
-                                                                                    <input type="text" class="form-control" readonly="">
-                                                                                </div>
-                                                                            </td>
-                                                                            <td></td>
-                                                                            <td>
-                                                                                <div class="form-group">
-                                                                                    <input type="text" class="form-control" readonly="">
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="title"><i class="icofont icofont-stylish-right text-danger ml-4"></i>No. de Pagos</td>
-                                                                            <td>
-                                                                                <div class="form-group">
-                                                                                    <input type="text" class="form-control" readonly="">
-                                                                                </div>
-                                                                            </td>
+                                                                                <td>
+                                                                                    <div class="form-group" style="display: flex;">
+                                                                                        <select name="select" class="form-control">
+                                                                                            <option value=" opt8">10</option>
+                                                                                            <option value="opt9">15</option>
+                                                                                            <option value="opt10">20</option>
+                                                                                            <option value="opt11">25</option>
+                                                                                        </select>
+                                                                                        <label class="title ml-2 mr-2">No. de Pagos</label>
+                                                                                        <input type="text" class="form-control" readonly="">
+                                                                                    </div>
+                                                                                </td>
                                                                             <td>
                                                                                 <div class="form-group">
                                                                                     <input type="text" class="form-control" readonly="">
@@ -581,11 +552,11 @@
                                                                         <tr>
                                                                             <td class="title"></td>
                                                                             <td>
-                                                                                <a href="#" class="btn btn-block waves-effect waves-light btn-danger btn-outline-danger">Tabla de Amortización</a>
+                                                                                <a href="#" class="btn btn-block waves-effect waves-light btn-danger btn-outline-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tabla de Amortización.">Descargar</a>
                                                                             </td>
                                                                             <td></td>
                                                                             <td>
-                                                                                <a href="#" class="btn btn-block waves-effect waves-light btn-danger btn-outline-danger">Tabla de Amortización promocional</a></td>
+                                                                                <a href="#" class="btn btn-block waves-effect waves-light btn-danger btn-outline-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tabla de Amortización Promocional.">Descargar</a></td>
                                                                             <td></td>
                                                                         </tr>
                                                                         <tr>
@@ -599,38 +570,10 @@
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                        <div class="card-block">
-                                                            <div class="form-group row mt-2">
-                                                                <label class="col-sm-5 col-form-label "><i class="icofont icofont-hand-drawn-right red-s"></i>¿El Cliente formalizó el crédito?</label>
-                                                                <div class="col-sm-3 ">
-                                                                    <select name="select" class="form-control">
-                                                                        <option value=" opt8">Si</option>
-                                                                        <option value="opt9">No</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="col-sm-2 text-center">
-                                                                    <a href="#" class="btn btn-block btn-info waves-effect waves-light">Guardar</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group row mt-2">
-                                                                <label class="col-sm-5 col-form-label"><i class="icofont icofont-hand-drawn-right red-s"></i>Selecciona el motivo por el cual no se formalizó el crédito</label>
-                                                                <div class="col-sm-3 ">
-                                                                    <select name="select" class="form-control">
-                                                                        <option value=" opt8">Tasa de Interés es muy alta</option>
-                                                                        <option value="opt9">Regresará en otro momento</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="col-sm-2 text-center">
-                                                                    <a href="#" class="btn btn-block btn-info waves-effect waves-light">Guardar</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+
                                                     <div class="card-block">
                                                         <div class="col-xl-12 col-md-12">
-                                                            <div class="card table-card">
+                                                            <div class="card table-card mt-4">
                                                                 <div class="card-header">
                                                                     <h5>Notas Informativas</h5>
                                                                     <div class="card-header-right">
@@ -672,6 +615,35 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                        <div class="card-block">
+                                                            <div class="form-group row mt-2">
+                                                                <label class="col-sm-5 col-form-label "><i class="icofont icofont-hand-drawn-right red-s"></i>¿El Cliente formalizó el crédito?</label>
+                                                                <div class="col-sm-3 ">
+                                                                    <select name="select" class="form-control">
+                                                                        <option value=" opt8">Si</option>
+                                                                        <option value="opt9">No</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-sm-2 text-center">
+                                                                    <a href="#" class="btn btn-block btn-info waves-effect waves-light">Guardar</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row mt-2">
+                                                                <label class="col-sm-5 col-form-label"><i class="icofont icofont-hand-drawn-right red-s"></i>Selecciona el motivo por el cual no se formalizó el crédito</label>
+                                                                <div class="col-sm-3 ">
+                                                                    <select name="select" class="form-control">
+                                                                        <option value=" opt8">Tasa de Interés es muy alta</option>
+                                                                        <option value="opt9">Regresará en otro momento</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-sm-2 text-center">
+                                                                    <a href="#" class="btn btn-block btn-info waves-effect waves-light">Guardar</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                 </div>
                                             </div>
                                         </div>
