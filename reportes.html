@@ -19,12 +19,12 @@
     <link rel="stylesheet" href="css/waves.min.css" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" href="css/themify-icons.css">
     <link rel="stylesheet" type="text/css" href="css/icofont.css">
+    <link rel="stylesheet" type="text/css" href="css/glyphicon.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css">
-    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
-    <link rel="stylesheet" type="text/css" href="css/datedropper.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/spectrum.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.minicolors.css" />
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.dataTables.css">
     <link rel="stylesheet" href="css/select2.min.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap-multiselect.css" />
     <link rel="stylesheet" type="text/css" href="css/multi-select.css" />
@@ -304,16 +304,15 @@
                                                             <div class="form-group row">
                                                                 <label class="col-sm-2 col-form-label text-left mb-3 pl-5">Fecha Inicial</label>
                                                                 <div class="col-md-4">
-                                                                    <input class="form-control  form-control-primary" type="date">
+                                                                    <input class="form-control  " type="date">
                                                                 </div>
                                                                 <label class="col-sm-2 col-form-label text-left pl-5">Fecha Final</label>
                                                                 <div class="col-md-4">
-                                                                    <input class="form-control  form-control-primary" type="date">
+                                                                    <input class="form-control  " type="date">
                                                                 </div>
                                                                 <label class="col-sm-2 col-form-label text-left mb-3 pl-5">Tipo de Usuario</label>
                                                                 <div class="col-sm-4">
-                                                                    <select name="select" class="form-control form-control-primary">
-                                                                        <option value="opt1">Seleccione una opción</option>
+                                                                    <select class="form-control form-control-primary  select2" multiple="multiple" id="my-select">
                                                                         <option value="opt2">Administrador</option>
                                                                         <option value="opt3">Comercial</option>
                                                                         <option value="opt4">Consulta</option>
@@ -321,8 +320,7 @@
                                                                 </div>
                                                                 <label class="col-sm-2 col-form-label text-left pl-5">Perfil</label>
                                                                 <div class="col-sm-4">
-                                                                    <select name="select" class="form-control form-control-primary">
-                                                                        <option value="opt1">Seleccione una opción</option>
+                                                                    <select class="form-control form-control-primary  select2" multiple="multiple" id="my-select">
                                                                         <option value="opt2">Contac Center</option>
                                                                         <option value="opt3">Fuerza de Ventos</option>
                                                                         <option value="opt4">XXX</option>
@@ -330,8 +328,7 @@
                                                                 </div>
                                                                 <label class="col-sm-2 col-form-label text-left mb-3 pl-5">Subproducto</label>
                                                                 <div class="col-sm-4">
-                                                                    <select name="select" class="form-control form-control-primary">
-                                                                        <option value="opt1">Seleccione una opción</option>
+                                                                    <select class="form-control form-control-primary  select2" multiple="multiple" id="my-select">
                                                                         <option value="opt2">12-433</option>
                                                                         <option value="opt3">12-434</option>
                                                                         <option value="opt4">12-435</option>
@@ -339,11 +336,18 @@
                                                                 </div>
                                                                 <label class="col-sm-2 col-form-label text-left pl-5">Causas de Rechazo</label>
                                                                 <div class="col-sm-4">
-                                                                    <select name="select" class="form-control form-control-primary">
-                                                                        <option value="opt1">Seleccione una opción</option>
+                                                                    <select class="form-control form-control-primary  select2" multiple="multiple" id="my-select">
                                                                         <option value="opt2">Regresará en otro momento</option>
                                                                         <option value="opt3">La tasa de interés es muy alta</option>
                                                                         <option value="opt4">El monto es muy bajo</option>
+                                                                    </select>
+                                                                </div>
+                                                                <label class="col-sm-2 col-form-label text-left mb-3 pl-5">Conversión Auto</label>
+                                                                <div class="col-sm-4">
+                                                                    <select class="form-control form-control-primary  select2" multiple="multiple" id="my-select">
+                                                                        <option value="opt2">12-433</option>
+                                                                        <option value="opt3">12-434</option>
+                                                                        <option value="opt4">12-435</option>
                                                                     </select>
                                                                 </div>
                                                                 <div class="col-sm-8"></div>                     
@@ -415,21 +419,23 @@
     <script type="text/javascript" src="js/jquery.slimscroll.js"></script>
     <script type="text/javascript" src="js/modernizr.js"></script>
     <script type="text/javascript" src="js/css-scrollbars.js"></script>
-    <script type="text/javascript" src="js/moment-with-locales.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
-    <script type="text/javascript" src="js/daterangepicker.js"></script>
-    <script type="text/javascript" src="js/datedropper.min.js"></script>
-    <script type="text/javascript" src="js/spectrum.js"></script>
-    <script type="text/javascript" src="js/jscolor.js"></script>
-    <script type="text/javascript" src="js/jquery.minicolors.min.js"></script>
-    <script type="text/javascript" src="js/custom-picker.js"></script>
-    <script src="js/pcoded.min.js"></script>
-    <script type="text/javascript" src="js/select2.full.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.buttons.min.js"></script>
+    <script src="js/jszip.min.js"></script>
+    <script src="js/pdfmake.min.js"></script>
+    <script src="js/vfs_fonts.js"></script>
+    <script src="js/dataTables.responsive.min.js"></script>
+    <script src="js/buttons.print.min.js"></script>
+    <script src="js/buttons.html5.min.js"></script>
+    <script src="js/dataTables.bootstrap4.min.js"></script>
+    <script src="js/dataTables.responsive.min.js"></script>
+    <script src="js/responsive.bootstrap4.min.js"></script>
+    <script src="js/responsive-custom.js"></script>
+    <script type="text/javascript" src="js/select2.full.min.js"></script><!-- 
     <script type="text/javascript" src="js/bootstrap-multiselect.js">
     </script>
     <script type="text/javascript" src="js/jquery.multi-select.js"></script>
-    <script type="text/javascript" src="js/jquery.quicksearch.js"></script>
+    <script type="text/javascript" src="js/jquery.quicksearch.js"></script> -->
     <script type="text/javascript" src="js/select2-custom.js"></script>
     <script src="js/pcoded.min.js"></script>
     <script src="js/vertical-layout.min.js"></script>
